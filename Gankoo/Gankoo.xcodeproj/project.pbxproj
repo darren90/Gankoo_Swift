@@ -69,6 +69,9 @@
 		89A1F2131E49C121005E62A9 /* TFCycleScrollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F2111E49C121005E62A9 /* TFCycleScrollCell.swift */; };
 		89A1F2141E49C121005E62A9 /* TFCycleScrollCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89A1F2121E49C121005E62A9 /* TFCycleScrollCell.xib */; };
 		954169D65AD0CE34D47FD50D /* Pods_Gankoo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3262F691B21EEA4AA2325EF /* Pods_Gankoo.framework */; };
+		FE319E111E49FE3200662908 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE319E101E49FE3200662908 /* DataModel.swift */; };
+		FE319E131E49FEB700662908 /* GankooApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE319E121E49FEB700662908 /* GankooApi.swift */; };
+		FE319E151E4A025800662908 /* DataListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE319E141E4A025800662908 /* DataListModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -181,6 +184,9 @@
 		B3262F691B21EEA4AA2325EF /* Pods_Gankoo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gankoo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77EE55DDF2226C13757D4AE /* Pods-Gankoo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gankoo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gankoo/Pods-Gankoo.release.xcconfig"; sourceTree = "<group>"; };
 		F12E19576C175EF4AD47F35C /* Pods-Gankoo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gankoo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gankoo/Pods-Gankoo.debug.xcconfig"; sourceTree = "<group>"; };
+		FE319E101E49FE3200662908 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		FE319E121E49FEB700662908 /* GankooApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GankooApi.swift; sourceTree = "<group>"; };
+		FE319E141E4A025800662908 /* DataListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataListModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,6 +290,9 @@
 				89A1F16F1E49B58A005E62A9 /* Model */,
 				89A1F1701E49B58A005E62A9 /* View */,
 				89A1F2061E49B690005E62A9 /* HomeViewController.swift */,
+				FE319E101E49FE3200662908 /* DataModel.swift */,
+				FE319E141E4A025800662908 /* DataListModel.swift */,
+				FE319E121E49FEB700662908 /* GankooApi.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -860,8 +869,10 @@
 				89A1F1E91E49B58A005E62A9 /* MJRefreshAutoFooter.m in Sources */,
 				89A1F2001E49B58A005E62A9 /* Message.swift in Sources */,
 				89A1F1DD1E49B58A005E62A9 /* String-Extension.swift in Sources */,
+				FE319E151E4A025800662908 /* DataListModel.swift in Sources */,
 				89A1F2091E49B69C005E62A9 /* SortViewController.swift in Sources */,
 				89A1F1F11E49B58A005E62A9 /* MJRefreshBackGifFooter.m in Sources */,
+				FE319E111E49FE3200662908 /* DataModel.swift in Sources */,
 				89A1F1ED1E49B58A005E62A9 /* MJRefreshHeader.m in Sources */,
 				89A1F20B1E49B6A3005E62A9 /* MeViewController.swift in Sources */,
 				89A1F2021E49B58A005E62A9 /* Showing.swift in Sources */,
@@ -870,6 +881,7 @@
 				89A1F13B1E49AC79005E62A9 /* AppDelegate.swift in Sources */,
 				89A1F1F41E49B58A005E62A9 /* MJRefreshGifHeader.m in Sources */,
 				89A1F1FD1E49B58A005E62A9 /* Config.swift in Sources */,
+				FE319E131E49FEB700662908 /* GankooApi.swift in Sources */,
 				89A1F1EB1E49B58A005E62A9 /* MJRefreshComponent.m in Sources */,
 				89A1F2131E49C121005E62A9 /* TFCycleScrollCell.swift in Sources */,
 				89A1F1E41E49B58A005E62A9 /* DateTimePicker.swift in Sources */,
@@ -1041,6 +1053,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 68539G8D3N;
 				INFOPLIST_FILE = Gankoo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ftf.marquee.Gankoo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1058,6 +1071,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 68539G8D3N;
 				INFOPLIST_FILE = Gankoo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ftf.marquee.Gankoo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -64,15 +64,42 @@ class TFCycleScrollView: UIView {
     }
 
     func addTimer(){
-        if timer != nil {
+        if timer == nil {
             timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(self.goToNext), userInfo: nil, repeats: true)
             RunLoop.main.add(timer!, forMode: .commonModes)
         }
     }
+    
+    func destroyTimer(){
+        if let timer = timer{
+            timer.invalidate()
+        }
+    }
 
+    func resetIndexPath() -> IndexPath{
+        let currentIndexPath = waterView.indexPathsForVisibleItems.last
+        
+        let currentIndexPathReset = IndexPath(item: (currentIndexPath?.item)!, section: TFSection/2)
+        waterView.scrollToItem(at: currentIndexPathReset, at: .left, animated: false)
+        return currentIndexPathReset
+    }
 
     func goToNext(){
-
+        if timer == nil {
+            return
+        }
+        
+        let currentIndexPath = resetIndexPath()
+        var nexItem = currentIndexPath.item + 1
+        var nexSection = currentIndexPath.section
+        if nexItem == dataArray?.count {
+            nexItem = 0
+            nexSection = nexSection + 1
+        }
+        
+        let nexIndexPath = IndexPath(item: nexItem, section: nexSection)
+        waterView.scrollToItem(at: nexIndexPath, at: .left, animated: true)
+        pageControl.currentPage = nexItem
     }
 
 }
@@ -95,6 +122,11 @@ extension TFCycleScrollView : UICollectionViewDataSource,UICollectionViewDelegat
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+//        let pageNum = Float(((Float(scrollView.contentOffset.x) / Float(self.frame.width)) + 0.5)) % (Float(dataArray!.count))
+//        pageControl.currentPage  = Int(pageNum)
     }
 
 }

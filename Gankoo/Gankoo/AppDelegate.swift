@@ -73,7 +73,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func initUmengTrack(){
         MobClick.setLogEnabled(true)
         let config = UMAnalyticsConfig.sharedInstance()
-        config?.appKey = ""
+        config?.appKey = "5648bb2fe0f55a6ab8004696"
         config?.secret = ""
         MobClick.start(withConfigure: config)
     }
