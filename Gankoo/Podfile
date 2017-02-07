@@ -1,0 +1,25 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Gankoo' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+inhibit_all_warnings!
+  use_frameworks!
+
+    pod 'Alamofire', '~> 4.0.0'
+    pod 'SwiftyJSON', '~> 3.1.1'
+  
+#  pod 'YYKit', '~> 1.0.9'
+
+    pod 'YYWebImage'
+    pod 'YYImage'
+
+    pod 'Bugly'
+    # 集成新浪微博 + 微信 + QQ
+    pod 'UMengUShare/UI'
+    pod 'UMengUShare/Social/Sina'
+    pod 'UMengUShare/Social/WeChat'
+    pod 'UMengUShare/Social/QQ'
+    pod 'UMengAnalytics'
+
+end

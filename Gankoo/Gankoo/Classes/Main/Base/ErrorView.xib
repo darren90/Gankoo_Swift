@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ErrorView" customModule="DotAnimation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jmG-8h-aSL">
+                    <rect key="frame" x="169" y="269" width="37" height="30"/>
+                    <state key="normal" title="Retry"/>
+                    <connections>
+                        <action selector="retryAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="7e3-lA-rHi"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="网络错误" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ri3-pz-z7Z">
+                    <rect key="frame" x="157.5" y="323" width="61.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.41176470588235292" green="0.41176470588235292" blue="0.41176470588235292" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请检查你的网络" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="diy-mM-HVU">
+                    <rect key="frame" x="148" y="349" width="79" height="13.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.32156862745098036" green="0.32156862745098036" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Ri3-pz-z7Z" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="JRO-sl-XpT"/>
+                <constraint firstItem="jmG-8h-aSL" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-50" id="akR-Wu-qfq"/>
+                <constraint firstItem="diy-mM-HVU" firstAttribute="top" secondItem="Ri3-pz-z7Z" secondAttribute="bottom" constant="8" id="fEz-If-hLn"/>
+                <constraint firstItem="Ri3-pz-z7Z" firstAttribute="top" secondItem="jmG-8h-aSL" secondAttribute="bottom" constant="24" id="jrU-pz-RdM"/>
+                <constraint firstItem="diy-mM-HVU" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="kd5-KA-T5O"/>
+                <constraint firstItem="jmG-8h-aSL" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="pep-dx-Xg8"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <connections>
+                <outlet property="msgDetailLabel" destination="diy-mM-HVU" id="d0m-Qg-2GG"/>
+                <outlet property="msgLabel" destination="Ri3-pz-z7Z" id="5p0-aJ-l68"/>
+                <outlet property="retryBtn" destination="jmG-8h-aSL" id="BOJ-Hv-gWa"/>
+            </connections>
+        </view>
+    </objects>
+</document>
