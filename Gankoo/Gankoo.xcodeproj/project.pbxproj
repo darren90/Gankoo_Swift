@@ -64,6 +64,10 @@
 		89A1F2071E49B690005E62A9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F2061E49B690005E62A9 /* HomeViewController.swift */; };
 		89A1F2091E49B69C005E62A9 /* SortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F2081E49B69C005E62A9 /* SortViewController.swift */; };
 		89A1F20B1E49B6A3005E62A9 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F20A1E49B6A3005E62A9 /* MeViewController.swift */; };
+		89A1F20E1E49C0D9005E62A9 /* TFCycleScrollModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F20D1E49C0D9005E62A9 /* TFCycleScrollModel.swift */; };
+		89A1F2101E49C0FD005E62A9 /* TFCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F20F1E49C0FD005E62A9 /* TFCycleScrollView.swift */; };
+		89A1F2131E49C121005E62A9 /* TFCycleScrollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F2111E49C121005E62A9 /* TFCycleScrollCell.swift */; };
+		89A1F2141E49C121005E62A9 /* TFCycleScrollCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89A1F2121E49C121005E62A9 /* TFCycleScrollCell.xib */; };
 		954169D65AD0CE34D47FD50D /* Pods_Gankoo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3262F691B21EEA4AA2325EF /* Pods_Gankoo.framework */; };
 /* End PBXBuildFile section */
 
@@ -170,6 +174,10 @@
 		89A1F2061E49B690005E62A9 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		89A1F2081E49B69C005E62A9 /* SortViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortViewController.swift; sourceTree = "<group>"; };
 		89A1F20A1E49B6A3005E62A9 /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
+		89A1F20D1E49C0D9005E62A9 /* TFCycleScrollModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFCycleScrollModel.swift; sourceTree = "<group>"; };
+		89A1F20F1E49C0FD005E62A9 /* TFCycleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFCycleScrollView.swift; sourceTree = "<group>"; };
+		89A1F2111E49C121005E62A9 /* TFCycleScrollCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFCycleScrollCell.swift; sourceTree = "<group>"; };
+		89A1F2121E49C121005E62A9 /* TFCycleScrollCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFCycleScrollCell.xib; sourceTree = "<group>"; };
 		B3262F691B21EEA4AA2325EF /* Pods_Gankoo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gankoo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77EE55DDF2226C13757D4AE /* Pods-Gankoo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gankoo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gankoo/Pods-Gankoo.release.xcconfig"; sourceTree = "<group>"; };
 		F12E19576C175EF4AD47F35C /* Pods-Gankoo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gankoo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gankoo/Pods-Gankoo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -450,6 +458,7 @@
 		89A1F1901E49B58A005E62A9 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				89A1F20C1E49C0B8005E62A9 /* TFCycleScrollView */,
 				89A1F1911E49B58A005E62A9 /* DatePicker */,
 				89A1F1951E49B58A005E62A9 /* DWebView */,
 				89A1F19A1E49B58A005E62A9 /* ThirdPart */,
@@ -606,6 +615,17 @@
 			path = Configuration;
 			sourceTree = "<group>";
 		};
+		89A1F20C1E49C0B8005E62A9 /* TFCycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				89A1F20D1E49C0D9005E62A9 /* TFCycleScrollModel.swift */,
+				89A1F20F1E49C0FD005E62A9 /* TFCycleScrollView.swift */,
+				89A1F2111E49C121005E62A9 /* TFCycleScrollCell.swift */,
+				89A1F2121E49C121005E62A9 /* TFCycleScrollCell.xib */,
+			);
+			path = TFCycleScrollView;
+			sourceTree = "<group>";
+		};
 		D1F9C3AA3CA65CB5DAA03F76 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -739,6 +759,7 @@
 				89A1F1451E49AC79005E62A9 /* LaunchScreen.storyboard in Resources */,
 				89A1F1421E49AC79005E62A9 /* Assets.xcassets in Resources */,
 				89A1F1E61E49B58A005E62A9 /* sure_placeholder_error@2x.png in Resources */,
+				89A1F2141E49C121005E62A9 /* TFCycleScrollCell.xib in Resources */,
 				89A1F1401E49AC79005E62A9 /* Main.storyboard in Resources */,
 				89A1F1E11E49B58A005E62A9 /* iTVShows.css in Resources */,
 				89A1F1F71E49B58A005E62A9 /* MJRefresh.bundle in Resources */,
@@ -844,12 +865,15 @@
 				89A1F1ED1E49B58A005E62A9 /* MJRefreshHeader.m in Sources */,
 				89A1F20B1E49B6A3005E62A9 /* MeViewController.swift in Sources */,
 				89A1F2021E49B58A005E62A9 /* Showing.swift in Sources */,
+				89A1F20E1E49C0D9005E62A9 /* TFCycleScrollModel.swift in Sources */,
 				89A1F1FE1E49B58A005E62A9 /* ColorList.swift in Sources */,
 				89A1F13B1E49AC79005E62A9 /* AppDelegate.swift in Sources */,
 				89A1F1F41E49B58A005E62A9 /* MJRefreshGifHeader.m in Sources */,
 				89A1F1FD1E49B58A005E62A9 /* Config.swift in Sources */,
 				89A1F1EB1E49B58A005E62A9 /* MJRefreshComponent.m in Sources */,
+				89A1F2131E49C121005E62A9 /* TFCycleScrollCell.swift in Sources */,
 				89A1F1E41E49B58A005E62A9 /* DateTimePicker.swift in Sources */,
+				89A1F2101E49C0FD005E62A9 /* TFCycleScrollView.swift in Sources */,
 				89A1F1F91E49B58A005E62A9 /* NSBundle+MJRefresh.m in Sources */,
 				89A1F1EF1E49B58A005E62A9 /* MJRefreshAutoNormalFooter.m in Sources */,
 				89A1F1E51E49B58A005E62A9 /* StepCollectionViewFlowLayout.swift in Sources */,
