@@ -8,6 +8,8 @@
 
 import UIKit
 
+let TFSection = 100
+
 protocol TFCycleScrollViewDelegate {
 //    func cycleScrollViewDidSelectAtIndex
 }
@@ -22,8 +24,9 @@ class TFCycleScrollView: UIView {
 
     var dataArray:[String]?
     lazy var waterView:UICollectionView = UICollectionView(frame: self.frame, collectionViewLayout: UICollectionViewFlowLayout())
-
     lazy var pageControl:UIPageControl = UIPageControl()
+
+    var timer : Timer?
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -44,9 +47,33 @@ class TFCycleScrollView: UIView {
         waterView.dataSource = self
         waterView.showsHorizontalScrollIndicator = false
         waterView.backgroundColor = UIColor.white
-        
+        waterView.frame = self.bounds
+
+        let flowLayout = waterView.collectionViewLayout as! UICollectionViewFlowLayout
+        flowLayout.minimumLineSpacing = 0
+        flowLayout.minimumInteritemSpacing = 0
+        flowLayout.itemSize = self.frame.size
+        flowLayout.scrollDirection = .horizontal
     }
 
+
+    override func layoutSubviews() {
+        super.layoutSubviews()
+
+
+    }
+
+    func addTimer(){
+        if timer != nil {
+            timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(self.goToNext), userInfo: nil, repeats: true)
+            RunLoop.main.add(timer!, forMode: .commonModes)
+        }
+    }
+
+
+    func goToNext(){
+
+    }
 
 }
 
@@ -54,7 +81,7 @@ class TFCycleScrollView: UIView {
 extension TFCycleScrollView : UICollectionViewDataSource,UICollectionViewDelegate {
 
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 100
+        return TFSection
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
