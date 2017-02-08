@@ -44,9 +44,10 @@ class SortViewController: UIViewController {
 
         let cache = DLLRUCache.init(count: 6)
         let tabbar = DLScrollTabbarView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 34))
+        let holeColor = UIColor(colorLiteralRed: 61/255.0, green: 168/255.0, blue: 245/255.0, alpha: 1.0)
         tabbar.tabItemNormalColor = UIColor.black
-        tabbar.tabItemSelectedColor = UIColor.brown
-        tabbar.trackColor = UIColor.brown
+        tabbar.tabItemSelectedColor = holeColor
+        tabbar.trackColor = holeColor
         tabbar.tabItemNormalFontSize = 14.0
 
         var arrs = [DLScrollTabbarItem]()

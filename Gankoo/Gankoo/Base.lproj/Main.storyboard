@@ -129,7 +129,7 @@
             </objects>
             <point key="canvasLocation" x="617" y="269"/>
         </scene>
-        <!--Me View Controller-->
+        <!--我的-->
         <scene sceneID="syi-0h-uM1">
             <objects>
                 <viewController id="Fa8-Oi-V3T" customClass="MeViewController" customModule="Gankoo" customModuleProvider="target" sceneMemberID="viewController">
@@ -142,7 +142,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="JXE-dO-q7A"/>
+                    <navigationItem key="navigationItem" title="我的" id="JXE-dO-q7A"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a4M-I4-Iw4" sceneMemberID="firstResponder"/>
             </objects>

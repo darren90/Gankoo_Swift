@@ -79,6 +79,9 @@ class GankooApi: NSObject {
         }
     }
 
+    
+//    https://gank.io/api/day/history
+    //获取发过干活的日期
 
 }
 
