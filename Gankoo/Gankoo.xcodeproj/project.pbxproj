@@ -68,6 +68,18 @@
 		89A1F2101E49C0FD005E62A9 /* TFCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F20F1E49C0FD005E62A9 /* TFCycleScrollView.swift */; };
 		89A1F2131E49C121005E62A9 /* TFCycleScrollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F2111E49C121005E62A9 /* TFCycleScrollCell.swift */; };
 		89A1F2141E49C121005E62A9 /* TFCycleScrollCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89A1F2121E49C121005E62A9 /* TFCycleScrollCell.xib */; };
+		89A1F2171E4AB380005E62A9 /* DataListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F2151E4AB380005E62A9 /* DataListCell.swift */; };
+		89A1F2181E4AB380005E62A9 /* DataListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89A1F2161E4AB380005E62A9 /* DataListCell.xib */; };
+		89A1F21C1E4AC83E005E62A9 /* PinterestSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F21B1E4AC83E005E62A9 /* PinterestSegment.swift */; };
+		89A1F25E1E4AF1FF005E62A9 /* DLLRUCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F24F1E4AF1FF005E62A9 /* DLLRUCache.m */; };
+		89A1F25F1E4AF1FF005E62A9 /* DLCustomSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F2511E4AF1FF005E62A9 /* DLCustomSlideView.m */; };
+		89A1F2601E4AF1FF005E62A9 /* DLSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F2531E4AF1FF005E62A9 /* DLSlideView.m */; };
+		89A1F2611E4AF1FF005E62A9 /* DLFixedTabbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F2561E4AF1FF005E62A9 /* DLFixedTabbarView.m */; };
+		89A1F2621E4AF1FF005E62A9 /* DLScrollTabbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F2581E4AF1FF005E62A9 /* DLScrollTabbarView.m */; };
+		89A1F2631E4AF1FF005E62A9 /* DLTabedSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F25B1E4AF1FF005E62A9 /* DLTabedSlideView.m */; };
+		89A1F2641E4AF1FF005E62A9 /* DLUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F25D1E4AF1FF005E62A9 /* DLUtility.m */; };
+		89A1F2661E4AF646005E62A9 /* SortDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F2651E4AF646005E62A9 /* SortDataViewController.swift */; };
+		89A1F2681E4B2007005E62A9 /* DataDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F2671E4B2007005E62A9 /* DataDetailController.swift */; };
 		954169D65AD0CE34D47FD50D /* Pods_Gankoo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3262F691B21EEA4AA2325EF /* Pods_Gankoo.framework */; };
 		FE319E111E49FE3200662908 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE319E101E49FE3200662908 /* DataModel.swift */; };
 		FE319E131E49FEB700662908 /* GankooApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE319E121E49FEB700662908 /* GankooApi.swift */; };
@@ -181,6 +193,28 @@
 		89A1F20F1E49C0FD005E62A9 /* TFCycleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFCycleScrollView.swift; sourceTree = "<group>"; };
 		89A1F2111E49C121005E62A9 /* TFCycleScrollCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFCycleScrollCell.swift; sourceTree = "<group>"; };
 		89A1F2121E49C121005E62A9 /* TFCycleScrollCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFCycleScrollCell.xib; sourceTree = "<group>"; };
+		89A1F2151E4AB380005E62A9 /* DataListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataListCell.swift; sourceTree = "<group>"; };
+		89A1F2161E4AB380005E62A9 /* DataListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DataListCell.xib; sourceTree = "<group>"; };
+		89A1F21A1E4AC83E005E62A9 /* PinterestSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinterestSegment.h; sourceTree = "<group>"; };
+		89A1F21B1E4AC83E005E62A9 /* PinterestSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinterestSegment.swift; sourceTree = "<group>"; };
+		89A1F24D1E4AF1FF005E62A9 /* DLCacheProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLCacheProtocol.h; sourceTree = "<group>"; };
+		89A1F24E1E4AF1FF005E62A9 /* DLLRUCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLLRUCache.h; sourceTree = "<group>"; };
+		89A1F24F1E4AF1FF005E62A9 /* DLLRUCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLLRUCache.m; sourceTree = "<group>"; };
+		89A1F2501E4AF1FF005E62A9 /* DLCustomSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLCustomSlideView.h; sourceTree = "<group>"; };
+		89A1F2511E4AF1FF005E62A9 /* DLCustomSlideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLCustomSlideView.m; sourceTree = "<group>"; };
+		89A1F2521E4AF1FF005E62A9 /* DLSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSlideView.h; sourceTree = "<group>"; };
+		89A1F2531E4AF1FF005E62A9 /* DLSlideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLSlideView.m; sourceTree = "<group>"; };
+		89A1F2551E4AF1FF005E62A9 /* DLFixedTabbarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLFixedTabbarView.h; sourceTree = "<group>"; };
+		89A1F2561E4AF1FF005E62A9 /* DLFixedTabbarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLFixedTabbarView.m; sourceTree = "<group>"; };
+		89A1F2571E4AF1FF005E62A9 /* DLScrollTabbarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLScrollTabbarView.h; sourceTree = "<group>"; };
+		89A1F2581E4AF1FF005E62A9 /* DLScrollTabbarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLScrollTabbarView.m; sourceTree = "<group>"; };
+		89A1F2591E4AF1FF005E62A9 /* DLSlideTabbarProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLSlideTabbarProtocol.h; sourceTree = "<group>"; };
+		89A1F25A1E4AF1FF005E62A9 /* DLTabedSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLTabedSlideView.h; sourceTree = "<group>"; };
+		89A1F25B1E4AF1FF005E62A9 /* DLTabedSlideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLTabedSlideView.m; sourceTree = "<group>"; };
+		89A1F25C1E4AF1FF005E62A9 /* DLUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLUtility.h; sourceTree = "<group>"; };
+		89A1F25D1E4AF1FF005E62A9 /* DLUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLUtility.m; sourceTree = "<group>"; };
+		89A1F2651E4AF646005E62A9 /* SortDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortDataViewController.swift; sourceTree = "<group>"; };
+		89A1F2671E4B2007005E62A9 /* DataDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataDetailController.swift; sourceTree = "<group>"; };
 		B3262F691B21EEA4AA2325EF /* Pods_Gankoo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gankoo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77EE55DDF2226C13757D4AE /* Pods-Gankoo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gankoo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gankoo/Pods-Gankoo.release.xcconfig"; sourceTree = "<group>"; };
 		F12E19576C175EF4AD47F35C /* Pods-Gankoo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gankoo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gankoo/Pods-Gankoo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -286,36 +320,15 @@
 		89A1F16D1E49B58A005E62A9 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				89A1F16E1E49B58A005E62A9 /* Controller */,
-				89A1F16F1E49B58A005E62A9 /* Model */,
-				89A1F1701E49B58A005E62A9 /* View */,
 				89A1F2061E49B690005E62A9 /* HomeViewController.swift */,
+				89A1F2151E4AB380005E62A9 /* DataListCell.swift */,
+				89A1F2671E4B2007005E62A9 /* DataDetailController.swift */,
+				89A1F2161E4AB380005E62A9 /* DataListCell.xib */,
 				FE319E101E49FE3200662908 /* DataModel.swift */,
 				FE319E141E4A025800662908 /* DataListModel.swift */,
 				FE319E121E49FEB700662908 /* GankooApi.swift */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		89A1F16E1E49B58A005E62A9 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		89A1F16F1E49B58A005E62A9 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		89A1F1701E49B58A005E62A9 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		89A1F1711E49B58A005E62A9 /* itv */ = {
@@ -375,65 +388,18 @@
 		89A1F17F1E49B58A005E62A9 /* Me */ = {
 			isa = PBXGroup;
 			children = (
-				89A1F1801E49B58A005E62A9 /* Controller */,
-				89A1F1811E49B58A005E62A9 /* Model */,
-				89A1F1821E49B58A005E62A9 /* View */,
 				89A1F20A1E49B6A3005E62A9 /* MeViewController.swift */,
 			);
 			path = Me;
 			sourceTree = "<group>";
 		};
-		89A1F1801E49B58A005E62A9 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		89A1F1811E49B58A005E62A9 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		89A1F1821E49B58A005E62A9 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		89A1F1831E49B58A005E62A9 /* Sort */ = {
 			isa = PBXGroup;
 			children = (
-				89A1F1841E49B58A005E62A9 /* Controller */,
-				89A1F1851E49B58A005E62A9 /* Model */,
-				89A1F1861E49B58A005E62A9 /* View */,
 				89A1F2081E49B69C005E62A9 /* SortViewController.swift */,
+				89A1F2651E4AF646005E62A9 /* SortDataViewController.swift */,
 			);
 			path = Sort;
-			sourceTree = "<group>";
-		};
-		89A1F1841E49B58A005E62A9 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		89A1F1851E49B58A005E62A9 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		89A1F1861E49B58A005E62A9 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		89A1F1871E49B58A005E62A9 /* Lib */ = {
@@ -467,6 +433,8 @@
 		89A1F1901E49B58A005E62A9 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				89A1F24B1E4AF1FF005E62A9 /* DLSlideView */,
+				89A1F2191E4AC83E005E62A9 /* PinterestSegment */,
 				89A1F20C1E49C0B8005E62A9 /* TFCycleScrollView */,
 				89A1F1911E49B58A005E62A9 /* DatePicker */,
 				89A1F1951E49B58A005E62A9 /* DWebView */,
@@ -635,6 +603,54 @@
 			path = TFCycleScrollView;
 			sourceTree = "<group>";
 		};
+		89A1F2191E4AC83E005E62A9 /* PinterestSegment */ = {
+			isa = PBXGroup;
+			children = (
+				89A1F21A1E4AC83E005E62A9 /* PinterestSegment.h */,
+				89A1F21B1E4AC83E005E62A9 /* PinterestSegment.swift */,
+			);
+			path = PinterestSegment;
+			sourceTree = "<group>";
+		};
+		89A1F24B1E4AF1FF005E62A9 /* DLSlideView */ = {
+			isa = PBXGroup;
+			children = (
+				89A1F24C1E4AF1FF005E62A9 /* DLCache */,
+				89A1F2501E4AF1FF005E62A9 /* DLCustomSlideView.h */,
+				89A1F2511E4AF1FF005E62A9 /* DLCustomSlideView.m */,
+				89A1F2521E4AF1FF005E62A9 /* DLSlideView.h */,
+				89A1F2531E4AF1FF005E62A9 /* DLSlideView.m */,
+				89A1F2541E4AF1FF005E62A9 /* DLTabbarView */,
+				89A1F25A1E4AF1FF005E62A9 /* DLTabedSlideView.h */,
+				89A1F25B1E4AF1FF005E62A9 /* DLTabedSlideView.m */,
+				89A1F25C1E4AF1FF005E62A9 /* DLUtility.h */,
+				89A1F25D1E4AF1FF005E62A9 /* DLUtility.m */,
+			);
+			path = DLSlideView;
+			sourceTree = "<group>";
+		};
+		89A1F24C1E4AF1FF005E62A9 /* DLCache */ = {
+			isa = PBXGroup;
+			children = (
+				89A1F24D1E4AF1FF005E62A9 /* DLCacheProtocol.h */,
+				89A1F24E1E4AF1FF005E62A9 /* DLLRUCache.h */,
+				89A1F24F1E4AF1FF005E62A9 /* DLLRUCache.m */,
+			);
+			path = DLCache;
+			sourceTree = "<group>";
+		};
+		89A1F2541E4AF1FF005E62A9 /* DLTabbarView */ = {
+			isa = PBXGroup;
+			children = (
+				89A1F2551E4AF1FF005E62A9 /* DLFixedTabbarView.h */,
+				89A1F2561E4AF1FF005E62A9 /* DLFixedTabbarView.m */,
+				89A1F2571E4AF1FF005E62A9 /* DLScrollTabbarView.h */,
+				89A1F2581E4AF1FF005E62A9 /* DLScrollTabbarView.m */,
+				89A1F2591E4AF1FF005E62A9 /* DLSlideTabbarProtocol.h */,
+			);
+			path = DLTabbarView;
+			sourceTree = "<group>";
+		};
 		D1F9C3AA3CA65CB5DAA03F76 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -771,6 +787,7 @@
 				89A1F2141E49C121005E62A9 /* TFCycleScrollCell.xib in Resources */,
 				89A1F1401E49AC79005E62A9 /* Main.storyboard in Resources */,
 				89A1F1E11E49B58A005E62A9 /* iTVShows.css in Resources */,
+				89A1F2181E4AB380005E62A9 /* DataListCell.xib in Resources */,
 				89A1F1F71E49B58A005E62A9 /* MJRefresh.bundle in Resources */,
 				89A1F1DB1E49B58A005E62A9 /* ErrorView.xib in Resources */,
 			);
@@ -846,8 +863,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				89A1F1F61E49B58A005E62A9 /* MJRefreshStateHeader.m in Sources */,
+				89A1F2611E4AF1FF005E62A9 /* DLFixedTabbarView.m in Sources */,
 				89A1F1F21E49B58A005E62A9 /* MJRefreshBackNormalFooter.m in Sources */,
+				89A1F21C1E4AC83E005E62A9 /* PinterestSegment.swift in Sources */,
 				89A1F1EC1E49B58A005E62A9 /* MJRefreshFooter.m in Sources */,
+				89A1F2621E4AF1FF005E62A9 /* DLScrollTabbarView.m in Sources */,
 				89A1F1D81E49B58A005E62A9 /* BaseTableViewController.swift in Sources */,
 				89A1F2031E49B58A005E62A9 /* WhisperFactory.swift in Sources */,
 				89A1F1F31E49B58A005E62A9 /* MJRefreshBackStateFooter.m in Sources */,
@@ -857,6 +877,7 @@
 				89A1F1FA1E49B58A005E62A9 /* UIScrollView+MJExtension.m in Sources */,
 				89A1F1E31E49B58A005E62A9 /* DateCollectionViewCell.swift in Sources */,
 				89A1F1DF1E49B58A005E62A9 /* APINetTools.swift in Sources */,
+				89A1F25F1E4AF1FF005E62A9 /* DLCustomSlideView.m in Sources */,
 				89A1F2041E49B58A005E62A9 /* WhisperView.swift in Sources */,
 				89A1F1FF1E49B58A005E62A9 /* FontList.swift in Sources */,
 				89A1F1EE1E49B58A005E62A9 /* MJRefreshAutoGifFooter.m in Sources */,
@@ -865,11 +886,13 @@
 				89A1F2071E49B690005E62A9 /* HomeViewController.swift in Sources */,
 				89A1F2011E49B58A005E62A9 /* ShoutFactory.swift in Sources */,
 				89A1F1D71E49B58A005E62A9 /* BaseTabBarController.swift in Sources */,
+				89A1F2601E4AF1FF005E62A9 /* DLSlideView.m in Sources */,
 				89A1F1FC1E49B58A005E62A9 /* UIView+MJExtension.m in Sources */,
 				89A1F1E91E49B58A005E62A9 /* MJRefreshAutoFooter.m in Sources */,
 				89A1F2001E49B58A005E62A9 /* Message.swift in Sources */,
 				89A1F1DD1E49B58A005E62A9 /* String-Extension.swift in Sources */,
 				FE319E151E4A025800662908 /* DataListModel.swift in Sources */,
+				89A1F2641E4AF1FF005E62A9 /* DLUtility.m in Sources */,
 				89A1F2091E49B69C005E62A9 /* SortViewController.swift in Sources */,
 				89A1F1F11E49B58A005E62A9 /* MJRefreshBackGifFooter.m in Sources */,
 				FE319E111E49FE3200662908 /* DataModel.swift in Sources */,
@@ -877,15 +900,20 @@
 				89A1F20B1E49B6A3005E62A9 /* MeViewController.swift in Sources */,
 				89A1F2021E49B58A005E62A9 /* Showing.swift in Sources */,
 				89A1F20E1E49C0D9005E62A9 /* TFCycleScrollModel.swift in Sources */,
+				89A1F2681E4B2007005E62A9 /* DataDetailController.swift in Sources */,
 				89A1F1FE1E49B58A005E62A9 /* ColorList.swift in Sources */,
 				89A1F13B1E49AC79005E62A9 /* AppDelegate.swift in Sources */,
 				89A1F1F41E49B58A005E62A9 /* MJRefreshGifHeader.m in Sources */,
 				89A1F1FD1E49B58A005E62A9 /* Config.swift in Sources */,
+				89A1F2661E4AF646005E62A9 /* SortDataViewController.swift in Sources */,
 				FE319E131E49FEB700662908 /* GankooApi.swift in Sources */,
+				89A1F2631E4AF1FF005E62A9 /* DLTabedSlideView.m in Sources */,
+				89A1F25E1E4AF1FF005E62A9 /* DLLRUCache.m in Sources */,
 				89A1F1EB1E49B58A005E62A9 /* MJRefreshComponent.m in Sources */,
 				89A1F2131E49C121005E62A9 /* TFCycleScrollCell.swift in Sources */,
 				89A1F1E41E49B58A005E62A9 /* DateTimePicker.swift in Sources */,
 				89A1F2101E49C0FD005E62A9 /* TFCycleScrollView.swift in Sources */,
+				89A1F2171E4AB380005E62A9 /* DataListCell.swift in Sources */,
 				89A1F1F91E49B58A005E62A9 /* NSBundle+MJRefresh.m in Sources */,
 				89A1F1EF1E49B58A005E62A9 /* MJRefreshAutoNormalFooter.m in Sources */,
 				89A1F1E51E49B58A005E62A9 /* StepCollectionViewFlowLayout.swift in Sources */,

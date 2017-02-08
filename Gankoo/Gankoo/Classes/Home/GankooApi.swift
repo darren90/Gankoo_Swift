@@ -13,8 +13,15 @@ class GankooApi: NSObject {
     static let shareInstance:GankooApi = GankooApi()
     
 
-    func getHomeData(finish:@escaping(_ models:[DataListModel]?,_ error:NSError?)->()){
-        APINetTools.GET(urlStr: "https://gank.io/api/day/2015/08/07", parms: nil)  {(result : AnyObject?, error: NSError?) -> () in
+    func getHomeData(date:Date,finish:@escaping(_ models:[DataListModel]?,_ error:NSError?)->()){
+
+        //https://gank.io/api/day/2017/02/08
+        let formatter = DateFormatter()
+        formatter.dateFormat = "YYYY/MM/dd"
+        let dateStr = formatter.string(from: date)
+        let url = "https://gank.io/api/day/" + dateStr
+
+        APINetTools.GET(urlStr: url, parms: nil)  {(result : AnyObject?, error: NSError?) -> () in
             
             if(error != nil){
                 finish(nil,error)
@@ -37,9 +44,60 @@ class GankooApi: NSObject {
                 }
                 finish(datas, nil)
             }
-            
         }
     }
-    
-    
+
+
+
+    func getSortDatas(sortName:String , page:Int , finish:@escaping(_ models:[DataModel]?,_ error:NSError?)->()){
+        //http://gank.io/api/data/数据类型/请求个数/第几页  https://gank.io/api/data/福利/18/1
+        var url = "https://gank.io/api/data/"
+        var sort = sortName
+        if sortName == "全部" {
+            sort = "all"
+        }
+        let cs=NSCharacterSet(charactersIn:"`#%^{}\"[]|\\<>//").inverted
+        url = url + sort.addingPercentEncoding(withAllowedCharacters: cs)! +  "/18/\(page)"
+
+        APINetTools.GET(urlStr: url, parms: nil)  {(result : AnyObject?, error: NSError?) -> () in
+
+            if(error != nil){
+                finish(nil,error)
+            }else{
+                let arr = result?["results"] as? [[String : AnyObject]]
+                if let arr = arr {
+                    var arrModels = [DataModel]()
+                    for dict in arr {
+                        let model = DataModel.init(dict: dict)
+                        arrModels.append(model)
+                    }
+                    finish(arrModels, nil)
+                }else{
+                    finish(nil,error)
+                }
+            }
+        }
+    }
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

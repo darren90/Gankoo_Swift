@@ -25,9 +25,7 @@ class APINetTools: NSObject {
 
     static func GET(urlStr:String,parms:[String : AnyObject]?,fininsh : @escaping (_ result:AnyObject? , _ error:NSError?) -> ()){
 
-        let url = getUrl(urlStr: urlStr)
-
-        Alamofire.request(url, method: .get).responseJSON { (response) in
+        Alamofire.request(urlStr, method: .get).responseJSON { (response) in
             switch response.result.isSuccess {
             case true:
 //                print("-- get request data:\(response.result.value)")
@@ -42,9 +40,8 @@ class APINetTools: NSObject {
     
     static func POST(urlStr:String,parms:[String : AnyObject]?,fininsh : @escaping (_ result:AnyObject? , _ error:NSError?) -> ()){
 
-        let url = getUrl(urlStr: urlStr)
 
-        Alamofire.request(url, method: .post).responseJSON { (response) in
+        Alamofire.request(urlStr, method: .post).responseJSON { (response) in
             switch response.result.isSuccess {
             case true:
 //                print("-- post request data:\(response.result.value)")

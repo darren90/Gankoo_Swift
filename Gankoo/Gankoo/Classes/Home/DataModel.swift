@@ -27,13 +27,22 @@ class DataModel: NSObject {
     var url:String?
     var used:Bool = false
     var who:String?
-    
+    var images:[String]?
     
     
     init(dict:[String:AnyObject]) {
         super.init()
         
         setValuesForKeys(dict)
+
+//        if let imgs = dict["images"] as? [String] {
+//            var arr:[String] = [String]()
+//            print(imgs)
+//            for img in imgs {
+//                arr.append(img)
+//            }
+//            images = arr
+//        }
     }
     
     override func setValue(_ value: Any?, forUndefinedKey key: String) {

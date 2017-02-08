@@ -14,7 +14,7 @@ class BaseNavigationController: UINavigationController,UINavigationControllerDel
         super.viewDidLoad()
 
         /// 隐藏导航栏
-        isNavigationBarHidden = true
+//        isNavigationBarHidden = true
         interactivePopGestureRecognizer?.delegate = self
     }
 
