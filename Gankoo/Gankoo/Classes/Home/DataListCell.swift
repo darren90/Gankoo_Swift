@@ -26,7 +26,7 @@ class DataListCell: UITableViewCell {
             nameLabel.text = model?.desc
             if model?.images != nil {
                 let url = URL(string: (model?.images!.first)!)
-                iconView.yy_setImage(with: url, placeholder: nil, options:  .setImageWithFadeAnimation, completion: nil)// .progressiveBlur
+                iconView.yy_setImage(with: url, placeholder: UIImage(named:"nopic_780x420"), options:  .setImageWithFadeAnimation, completion: nil)// .progressiveBlur
             }
         }
     }

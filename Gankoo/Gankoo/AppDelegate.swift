@@ -15,7 +15,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-
+        
+        //设置全局的tabbar的默认颜色 rgb(61, 168, 245)
+        let holeColor = UIColor(colorLiteralRed: 61/255.0, green: 168/255.0, blue: 245/255.0, alpha: 1.0)
+        UITabBar.appearance().tintColor = holeColor
+        UINavigationBar.appearance().tintColor = holeColor
+        
         initThirdSevices()
 
         return true

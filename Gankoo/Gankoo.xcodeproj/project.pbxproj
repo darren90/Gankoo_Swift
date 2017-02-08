@@ -84,6 +84,8 @@
 		FE319E111E49FE3200662908 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE319E101E49FE3200662908 /* DataModel.swift */; };
 		FE319E131E49FEB700662908 /* GankooApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE319E121E49FEB700662908 /* GankooApi.swift */; };
 		FE319E151E4A025800662908 /* DataListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE319E141E4A025800662908 /* DataListModel.swift */; };
+		FE71F12D1E4B836100CAF907 /* DataSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE71F12C1E4B836100CAF907 /* DataSectionHeaderView.swift */; };
+		FE71F12F1E4B836B00CAF907 /* DataSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE71F12E1E4B836B00CAF907 /* DataSectionHeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -221,6 +223,8 @@
 		FE319E101E49FE3200662908 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		FE319E121E49FEB700662908 /* GankooApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GankooApi.swift; sourceTree = "<group>"; };
 		FE319E141E4A025800662908 /* DataListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataListModel.swift; sourceTree = "<group>"; };
+		FE71F12C1E4B836100CAF907 /* DataSectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSectionHeaderView.swift; sourceTree = "<group>"; };
+		FE71F12E1E4B836B00CAF907 /* DataSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DataSectionHeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -325,6 +329,8 @@
 				89A1F2671E4B2007005E62A9 /* DataDetailController.swift */,
 				89A1F2161E4AB380005E62A9 /* DataListCell.xib */,
 				FE319E101E49FE3200662908 /* DataModel.swift */,
+				FE71F12C1E4B836100CAF907 /* DataSectionHeaderView.swift */,
+				FE71F12E1E4B836B00CAF907 /* DataSectionHeaderView.xib */,
 				FE319E141E4A025800662908 /* DataListModel.swift */,
 				FE319E121E49FEB700662908 /* GankooApi.swift */,
 			);
@@ -784,6 +790,7 @@
 				89A1F1451E49AC79005E62A9 /* LaunchScreen.storyboard in Resources */,
 				89A1F1421E49AC79005E62A9 /* Assets.xcassets in Resources */,
 				89A1F1E61E49B58A005E62A9 /* sure_placeholder_error@2x.png in Resources */,
+				FE71F12F1E4B836B00CAF907 /* DataSectionHeaderView.xib in Resources */,
 				89A1F2141E49C121005E62A9 /* TFCycleScrollCell.xib in Resources */,
 				89A1F1401E49AC79005E62A9 /* Main.storyboard in Resources */,
 				89A1F1E11E49B58A005E62A9 /* iTVShows.css in Resources */,
@@ -896,6 +903,7 @@
 				89A1F2091E49B69C005E62A9 /* SortViewController.swift in Sources */,
 				89A1F1F11E49B58A005E62A9 /* MJRefreshBackGifFooter.m in Sources */,
 				FE319E111E49FE3200662908 /* DataModel.swift in Sources */,
+				FE71F12D1E4B836100CAF907 /* DataSectionHeaderView.swift in Sources */,
 				89A1F1ED1E49B58A005E62A9 /* MJRefreshHeader.m in Sources */,
 				89A1F20B1E49B6A3005E62A9 /* MeViewController.swift in Sources */,
 				89A1F2021E49B58A005E62A9 /* Showing.swift in Sources */,

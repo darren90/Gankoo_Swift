@@ -84,6 +84,21 @@ extension HomeViewController : UITableViewDataSource,UITableViewDelegate{
         return array?.count ?? 0
     }
     
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let header = DataSectionHeaderView.headerWithTableView(tableView: tableView)
+        let listModel = dataArray?[section]
+        header.title = listModel?.name
+        return header
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 35
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 0.0000001
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = DataListCell.cellWithTableView(tableView: tableView)
 

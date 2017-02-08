@@ -35,7 +35,7 @@ class SortDataViewController: UIViewController {
         tableView.frame = CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.height - 34 - 64 - 49)
         tableView.delegate = self
         tableView.dataSource = self
-
+        tableView.backgroundColor = UIColor.white
         let header = MJRefreshNormalHeader(refreshingTarget: self, refreshingAction: #selector(self.loadNew))
         tableView.mj_header = header
         tableView.mj_header.beginRefreshing()
