@@ -31,6 +31,7 @@ class HomeViewController: UIViewController {
         let header = MJRefreshNormalHeader(refreshingTarget: self, refreshingAction: #selector(self.loadNew))
         tableView.mj_header = header
         tableView.mj_header.beginRefreshing()
+
     }
 
     func loadNew() {

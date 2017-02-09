@@ -32,7 +32,7 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fRw-Xa-K2F">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fRw-Xa-K2F" userLabel="LineView">
                         <rect key="frame" x="0.0" y="91" width="320" height="1"/>
                         <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -47,16 +47,15 @@
                     <constraint firstItem="Pxj-0Q-ZLp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="UEC-yn-7U2"/>
                     <constraint firstItem="fRw-Xa-K2F" firstAttribute="top" secondItem="axH-CQ-iht" secondAttribute="bottom" constant="10" id="kGM-cE-k4C"/>
                     <constraint firstItem="axH-CQ-iht" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="ly3-F2-xcQ"/>
-                    <constraint firstItem="Pxj-0Q-ZLp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="mwP-Ra-uyd"/>
                     <constraint firstAttribute="bottom" secondItem="fRw-Xa-K2F" secondAttribute="bottom" id="vNQ-c5-lsN"/>
                     <constraint firstItem="fRw-Xa-K2F" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="wnN-wv-zXR"/>
-                    <constraint firstAttribute="bottom" secondItem="fRw-Xa-K2F" secondAttribute="bottom" id="yAe-U1-fNf"/>
-                    <constraint firstAttribute="bottom" secondItem="Pxj-0Q-ZLp" secondAttribute="bottom" constant="6" id="yHE-VR-pKb"/>
                     <constraint firstAttribute="trailing" secondItem="axH-CQ-iht" secondAttribute="trailing" constant="10" id="yMQ-Kh-JjB"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="iconView" destination="Pxj-0Q-ZLp" id="Ygd-qM-oN1"/>
+                <outlet property="imgWHASpect" destination="2Pg-J0-2pQ" id="5OY-hG-fZ0"/>
+                <outlet property="imgWidthContans" destination="x0C-qZ-pTc" id="d6H-q2-dgW"/>
                 <outlet property="nameLabel" destination="axH-CQ-iht" id="3cv-rd-63J"/>
             </connections>
             <point key="canvasLocation" x="25" y="76.5"/>

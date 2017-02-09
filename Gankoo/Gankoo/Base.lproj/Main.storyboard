@@ -56,7 +56,7 @@
         <scene sceneID="nTj-ic-G8H">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gO6-Tq-NCn" customClass="BaseNavigationController" customModule="Gankoo" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="最新" id="vDc-eY-h8H"/>
+                    <tabBarItem key="tabBarItem" title="最新" image="tab_new2" id="vDc-eY-h8H"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="euO-jV-PJ4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -152,7 +152,7 @@
         <scene sceneID="xwg-Cr-XbT">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ts9-gS-UXE" customClass="BaseNavigationController" customModule="Gankoo" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="我的" id="9HX-Ke-VFi"/>
+                    <tabBarItem key="tabBarItem" title="我的" image="tab_mine" id="9HX-Ke-VFi"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="H2t-gj-3mz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -170,6 +170,8 @@
     </scenes>
     <resources>
         <image name="calendar" width="20" height="20"/>
+        <image name="tab_mine" width="30" height="30"/>
+        <image name="tab_new2" width="25" height="25"/>
         <image name="tabbar_gank" width="30" height="30"/>
     </resources>
 </document>

@@ -11,6 +11,8 @@ import UIKit
 class DataListCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var iconView: UIImageView!
+    @IBOutlet weak var imgWidthContans: NSLayoutConstraint!
+    @IBOutlet weak var imgWHASpect: NSLayoutConstraint!
 
     class func cellWithTableView(tableView:UITableView) -> DataListCell{
         let id = "DataListCell"
@@ -23,11 +25,22 @@ class DataListCell: UITableViewCell {
 
     var model:DataModel?{
         didSet{
-            nameLabel.text = model?.desc
+
             if model?.images != nil {
+                imgWidthContans.constant = 89
+                imgWHASpect.constant = 89/80.0
+                iconView.isHidden = false
+
                 let url = URL(string: (model?.images!.first)!)
                 iconView.yy_setImage(with: url, placeholder: UIImage(named:"nopic_780x420"), options:  .setImageWithFadeAnimation, completion: nil)// .progressiveBlur
+            }else{
+                imgWidthContans.constant = 0
+                imgWHASpect.constant = 0
+
+                iconView.isHidden = true
             }
+
+            nameLabel.text = model?.desc
         }
     }
 
