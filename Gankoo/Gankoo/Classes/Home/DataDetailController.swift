@@ -15,6 +15,7 @@ class DataDetailController: SFSafariViewController {
 
     var listId:String?
 
+    var model:DataModel?
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,7 +24,6 @@ class DataDetailController: SFSafariViewController {
         addCollectBtn()
         delegate = self
     }
-    
 
 
     func addCollectBtn(){
@@ -38,6 +38,9 @@ class DataDetailController: SFSafariViewController {
 
     func collectionAction(){
         print("收藏文字的id:\(listId)")
+
+        RMDBTools.shareInstance.addData(model)
+        RMDBTools.shareInstance.getAllDatas()
     }
 
 }

@@ -86,6 +86,7 @@
 		89F091191E4C79EA002D618C /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89F091111E4C798B002D618C /* Realm.framework */; };
 		89F0911A1E4C79EA002D618C /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 89F091111E4C798B002D618C /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		89F0911C1E4C79EA002D618C /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 89F091121E4C798B002D618C /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		89F0911F1E4C7A70002D618C /* RMDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F0911E1E4C7A70002D618C /* RMDataModel.swift */; };
 		954169D65AD0CE34D47FD50D /* Pods_Gankoo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3262F691B21EEA4AA2325EF /* Pods_Gankoo.framework */; };
 		FE319E111E49FE3200662908 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE319E101E49FE3200662908 /* DataModel.swift */; };
 		FE319E131E49FEB700662908 /* GankooApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE319E121E49FEB700662908 /* GankooApi.swift */; };
@@ -241,6 +242,7 @@
 		89F091111E4C798B002D618C /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		89F091121E4C798B002D618C /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		89F091151E4C79BE002D618C /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		89F0911E1E4C7A70002D618C /* RMDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMDataModel.swift; sourceTree = "<group>"; };
 		B3262F691B21EEA4AA2325EF /* Pods_Gankoo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gankoo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77EE55DDF2226C13757D4AE /* Pods-Gankoo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gankoo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gankoo/Pods-Gankoo.release.xcconfig"; sourceTree = "<group>"; };
 		F12E19576C175EF4AD47F35C /* Pods-Gankoo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gankoo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gankoo/Pods-Gankoo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -359,6 +361,7 @@
 				FE71F12E1E4B836B00CAF907 /* DataSectionHeaderView.xib */,
 				FE319E141E4A025800662908 /* DataListModel.swift */,
 				FE319E121E49FEB700662908 /* GankooApi.swift */,
+				89F0911E1E4C7A70002D618C /* RMDataModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -949,6 +952,7 @@
 				89A1F2021E49B58A005E62A9 /* Showing.swift in Sources */,
 				89A1F20E1E49C0D9005E62A9 /* TFCycleScrollModel.swift in Sources */,
 				89A1F2681E4B2007005E62A9 /* DataDetailController.swift in Sources */,
+				89F0911F1E4C7A70002D618C /* RMDataModel.swift in Sources */,
 				89A1F1FE1E49B58A005E62A9 /* ColorList.swift in Sources */,
 				89A1F13B1E49AC79005E62A9 /* AppDelegate.swift in Sources */,
 				89A1F1F41E49B58A005E62A9 /* MJRefreshGifHeader.m in Sources */,

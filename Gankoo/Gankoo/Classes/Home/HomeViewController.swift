@@ -118,6 +118,7 @@ extension HomeViewController : UITableViewDataSource,UITableViewDelegate{
         let url = URL(string: urlStr)
         let vc = DataDetailController(url: url!, entersReaderIfAvailable: true)
         vc.listId = model?._id
+        vc.model = model
         present(vc, animated: true, completion: nil)
 
         tableView.deselectRow(at: indexPath, animated: true)
