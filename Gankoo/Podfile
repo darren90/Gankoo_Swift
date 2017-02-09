@@ -24,6 +24,6 @@ target 'Gankoo' do
     pod 'UMengAnalytics'
 
 
-#    pod 'Realm'
+#    pod 'RealmSßwift'
 
 end
