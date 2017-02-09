@@ -21,6 +21,12 @@ class DataSectionHeaderView: UITableViewHeaderFooterView {
         return header!
     }
 
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
+
+        contentView.backgroundColor = UIColor.white
+    }
     
     var title:String?{
         didSet{

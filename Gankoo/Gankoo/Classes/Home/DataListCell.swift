@@ -47,6 +47,8 @@ class DataListCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+
+        iconView.clipsToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

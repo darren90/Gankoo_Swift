@@ -95,6 +95,19 @@ extension SortDataViewController : UITableViewDataSource,UITableViewDelegate{
         cell.model = model
         return cell
     }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let model = dataArray[indexPath.row]
+        guard let urlStr = model.url else {
+            return
+        }
+        let url = URL(string: urlStr)
+        let vc = DataDetailController(url: url!, entersReaderIfAvailable: true)
+        vc.listId = model._id
+        present(vc, animated: true, completion: nil)
+
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
     
 }
 

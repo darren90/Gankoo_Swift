@@ -439,6 +439,7 @@
 		89A1F1901E49B58A005E62A9 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				89AB19681E4C444800ABB524 /* RealmSwift */,
 				89A1F24B1E4AF1FF005E62A9 /* DLSlideView */,
 				89A1F2191E4AC83E005E62A9 /* PinterestSegment */,
 				89A1F20C1E49C0B8005E62A9 /* TFCycleScrollView */,
@@ -655,6 +656,13 @@
 				89A1F2591E4AF1FF005E62A9 /* DLSlideTabbarProtocol.h */,
 			);
 			path = DLTabbarView;
+			sourceTree = "<group>";
+		};
+		89AB19681E4C444800ABB524 /* RealmSwift */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RealmSwift;
 			sourceTree = "<group>";
 		};
 		D1F9C3AA3CA65CB5DAA03F76 /* Frameworks */ = {

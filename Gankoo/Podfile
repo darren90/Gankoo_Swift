@@ -3,7 +3,8 @@
 
 target 'Gankoo' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
-inhibit_all_warnings!
+
+  inhibit_all_warnings!
   use_frameworks!
 
     pod 'Alamofire', '~> 4.0.0'
@@ -21,5 +22,8 @@ inhibit_all_warnings!
     pod 'UMengUShare/Social/WeChat'
     pod 'UMengUShare/Social/QQ'
     pod 'UMengAnalytics'
+
+
+#    pod 'Realm'
 
 end

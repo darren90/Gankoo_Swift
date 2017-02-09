@@ -45,6 +45,11 @@ class GankooApi: NSObject {
                         datas.append(dataModel)
                     }
                 }
+                //排个序，，，
+                datas = datas.sorted(by: { (m1, m2) -> Bool in
+                    return m1.name! < m2.name!
+                })
+
                 finish(datas, nil)
             }
         }
