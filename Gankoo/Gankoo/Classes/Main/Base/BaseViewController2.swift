@@ -15,7 +15,7 @@ enum ErrorNetType:Int {
     case ServerError// 服务器错误
 }
 
-class BaseViewController: UIViewController,UIGestureRecognizerDelegate {
+class BaseViewController2: UIViewController,UIGestureRecognizerDelegate {
 
     var errorView:ErrorView = Bundle.main.loadNibNamed("ErrorView", owner: nil, options: nil)?.first as! ErrorView
 
@@ -68,8 +68,8 @@ class BaseViewController: UIViewController,UIGestureRecognizerDelegate {
         navigationController?.isNavigationBarHidden = true
 
         navBarView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 64)
-        navBarView.leftButton.addTarget(self, action: #selector(BaseViewController.leftBtnClick), for: .touchUpInside)
-        navBarView.rightButton.addTarget(self, action: #selector(BaseViewController.rightBtnClick), for: .touchUpInside)
+        navBarView.leftButton.addTarget(self, action: #selector(self.leftBtnClick), for: .touchUpInside)
+        navBarView.rightButton.addTarget(self, action: #selector(self.rightBtnClick), for: .touchUpInside)
         view.addSubview(navBarView)
         
         addLoadingView()
@@ -83,7 +83,7 @@ class BaseViewController: UIViewController,UIGestureRecognizerDelegate {
     func addLoadingView()  {
         view.addSubview(errorView)
         errorView.frame = view.frame;
-        errorView.retryBtn.addTarget(self, action: #selector(BaseViewController.retryBtnClick), for: .touchUpInside)
+        errorView.retryBtn.addTarget(self, action: #selector(self.retryBtnClick), for: .touchUpInside)
         
         view.addSubview(loadingView)
         loadingView.frame = view.bounds
@@ -106,7 +106,7 @@ class BaseViewController: UIViewController,UIGestureRecognizerDelegate {
     
     func addTimer() {
         if timer == nil {
-            timer = Timer(timeInterval: 0.15, target: self, selector: #selector(BaseViewController.timerAction), userInfo: nil, repeats: true)
+            timer = Timer(timeInterval: 0.15, target: self, selector: #selector(self.timerAction), userInfo: nil, repeats: true)
             RunLoop.main.add(timer!, forMode: .commonModes)
         }
     }

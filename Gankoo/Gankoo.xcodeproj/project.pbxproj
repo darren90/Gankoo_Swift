@@ -18,7 +18,7 @@
 		89A1F1D61E49B58A005E62A9 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F1781E49B58A005E62A9 /* BaseNavigationController.swift */; };
 		89A1F1D71E49B58A005E62A9 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F1791E49B58A005E62A9 /* BaseTabBarController.swift */; };
 		89A1F1D81E49B58A005E62A9 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F17A1E49B58A005E62A9 /* BaseTableViewController.swift */; };
-		89A1F1D91E49B58A005E62A9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F17B1E49B58A005E62A9 /* BaseViewController.swift */; };
+		89A1F1D91E49B58A005E62A9 /* BaseViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F17B1E49B58A005E62A9 /* BaseViewController2.swift */; };
 		89A1F1DA1E49B58A005E62A9 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F17C1E49B58A005E62A9 /* ErrorView.swift */; };
 		89A1F1DB1E49B58A005E62A9 /* ErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89A1F17D1E49B58A005E62A9 /* ErrorView.xib */; };
 		89A1F1DC1E49B58A005E62A9 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F17E1E49B58A005E62A9 /* LoadingView.swift */; };
@@ -87,6 +87,7 @@
 		89F0911A1E4C79EA002D618C /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 89F091111E4C798B002D618C /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		89F0911C1E4C79EA002D618C /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 89F091121E4C798B002D618C /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		89F0911F1E4C7A70002D618C /* RMDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F0911E1E4C7A70002D618C /* RMDataModel.swift */; };
+		89F091211E4D8B27002D618C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F091201E4D8B27002D618C /* BaseViewController.swift */; };
 		954169D65AD0CE34D47FD50D /* Pods_Gankoo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3262F691B21EEA4AA2325EF /* Pods_Gankoo.framework */; };
 		FE319E111E49FE3200662908 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE319E101E49FE3200662908 /* DataModel.swift */; };
 		FE319E131E49FEB700662908 /* GankooApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE319E121E49FEB700662908 /* GankooApi.swift */; };
@@ -146,7 +147,7 @@
 		89A1F1781E49B58A005E62A9 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		89A1F1791E49B58A005E62A9 /* BaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 		89A1F17A1E49B58A005E62A9 /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
-		89A1F17B1E49B58A005E62A9 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		89A1F17B1E49B58A005E62A9 /* BaseViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController2.swift; sourceTree = "<group>"; };
 		89A1F17C1E49B58A005E62A9 /* ErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		89A1F17D1E49B58A005E62A9 /* ErrorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ErrorView.xib; sourceTree = "<group>"; };
 		89A1F17E1E49B58A005E62A9 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
@@ -243,6 +244,7 @@
 		89F091121E4C798B002D618C /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		89F091151E4C79BE002D618C /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		89F0911E1E4C7A70002D618C /* RMDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMDataModel.swift; sourceTree = "<group>"; };
+		89F091201E4D8B27002D618C /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		B3262F691B21EEA4AA2325EF /* Pods_Gankoo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gankoo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77EE55DDF2226C13757D4AE /* Pods-Gankoo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gankoo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gankoo/Pods-Gankoo.release.xcconfig"; sourceTree = "<group>"; };
 		F12E19576C175EF4AD47F35C /* Pods-Gankoo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gankoo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gankoo/Pods-Gankoo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -352,6 +354,7 @@
 		89A1F16D1E49B58A005E62A9 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				89F091201E4D8B27002D618C /* BaseViewController.swift */,
 				89A1F2061E49B690005E62A9 /* HomeViewController.swift */,
 				89A1F2671E4B2007005E62A9 /* DataDetailController.swift */,
 				89A1F2151E4AB380005E62A9 /* DataListCell.swift */,
@@ -412,7 +415,7 @@
 				89A1F1781E49B58A005E62A9 /* BaseNavigationController.swift */,
 				89A1F1791E49B58A005E62A9 /* BaseTabBarController.swift */,
 				89A1F17A1E49B58A005E62A9 /* BaseTableViewController.swift */,
-				89A1F17B1E49B58A005E62A9 /* BaseViewController.swift */,
+				89A1F17B1E49B58A005E62A9 /* BaseViewController2.swift */,
 				89A1F17C1E49B58A005E62A9 /* ErrorView.swift */,
 				89A1F17D1E49B58A005E62A9 /* ErrorView.xib */,
 				89A1F17E1E49B58A005E62A9 /* LoadingView.swift */,
@@ -931,6 +934,7 @@
 				89A1F2041E49B58A005E62A9 /* WhisperView.swift in Sources */,
 				89A1F1FF1E49B58A005E62A9 /* FontList.swift in Sources */,
 				89A1F1EE1E49B58A005E62A9 /* MJRefreshAutoGifFooter.m in Sources */,
+				89F091211E4D8B27002D618C /* BaseViewController.swift in Sources */,
 				89A1F1F01E49B58A005E62A9 /* MJRefreshAutoStateFooter.m in Sources */,
 				89A1F13D1E49AC79005E62A9 /* ViewController.swift in Sources */,
 				89A1F2071E49B690005E62A9 /* HomeViewController.swift in Sources */,
@@ -969,7 +973,7 @@
 				89A1F1F91E49B58A005E62A9 /* NSBundle+MJRefresh.m in Sources */,
 				89A1F1EF1E49B58A005E62A9 /* MJRefreshAutoNormalFooter.m in Sources */,
 				89A1F1E51E49B58A005E62A9 /* StepCollectionViewFlowLayout.swift in Sources */,
-				89A1F1D91E49B58A005E62A9 /* BaseViewController.swift in Sources */,
+				89A1F1D91E49B58A005E62A9 /* BaseViewController2.swift in Sources */,
 				89A1F1D51E49B58A005E62A9 /* BaseNaviBar.swift in Sources */,
 				89A1F1DA1E49B58A005E62A9 /* ErrorView.swift in Sources */,
 				89A1F1DE1E49B58A005E62A9 /* UIImage+Extension.swift in Sources */,

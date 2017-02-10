@@ -9,7 +9,7 @@
 
 import UIKit
 
-class SortDataViewController: UIViewController {
+class SortDataViewController: BaseViewController {
 
     lazy var tableView:UITableView = UITableView(frame: self.view.bounds, style: .plain)
 
@@ -26,7 +26,7 @@ class SortDataViewController: UIViewController {
         //最底部的空间，设置距离底部的间距（autolayout），然后再设置这两个属性，就可以自动计算高度
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 100
-
+        tableView.separatorStyle = .none
     }
 
 
@@ -85,7 +85,7 @@ extension SortDataViewController : UITableViewDataSource,UITableViewDelegate{
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //        let array = dataArray?[section].dataArray
+        noDataView.isHidden = !(dataArray.count == 0)
         return dataArray.count
     }
 
@@ -104,6 +104,7 @@ extension SortDataViewController : UITableViewDataSource,UITableViewDelegate{
         let url = URL(string: urlStr)
         let vc = DataDetailController(url: url!, entersReaderIfAvailable: true)
         vc.listId = model._id
+        vc.model = model
         present(vc, animated: true, completion: nil)
 
         tableView.deselectRow(at: indexPath, animated: true)

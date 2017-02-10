@@ -29,7 +29,11 @@ class DataModel: NSObject {
     var who:String?
     var images:[String]?
     
-    
+
+    override init() {
+        super.init()
+    }
+
     init(dict:[String:AnyObject]) {
         super.init()
         

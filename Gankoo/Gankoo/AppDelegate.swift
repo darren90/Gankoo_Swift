@@ -18,6 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //获取服务器可用的干货日期 -- 也许只是第一次在默写特性的时候，比如周末，拉取不到数据，但是第二次后，都会拉渠道
         GankooApi.shareInstance.getSeverHistoryDates()
 
+        let docPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first
+//        let dbPath = docPath?.appending("/Gankoo.realm")
+        print("--dbPath:\(docPath)")
+
         return true
     }
 
@@ -84,7 +88,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     //MARK: -- 友盟统计
     func initUmengTrack(){
-        MobClick.setLogEnabled(true)
+        MobClick.setLogEnabled(false)
         let config = UMAnalyticsConfig.sharedInstance()
         config?.appKey = "5648bb2fe0f55a6ab8004696"
         config?.secret = ""
@@ -94,7 +98,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     //MARK: -- 友盟分享
     func initUMsocial() {
         let umMangerr = UMSocialManager.default()
-        umMangerr!.openLog(true)
+        umMangerr!.openLog(false)
         umMangerr!.umSocialAppkey = ""
 
         //微信

@@ -9,7 +9,7 @@
 import UIKit
 import SafariServices
 
-class HomeViewController: UIViewController {
+class HomeViewController: BaseViewController {
     @IBOutlet weak var tableView: UITableView!
 
     var getDate:Date = Date()
@@ -22,6 +22,9 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        launchAnimation() 
+
         automaticallyAdjustsScrollViewInsets = false
 
         tableView.separatorStyle = .none
@@ -31,7 +34,6 @@ class HomeViewController: UIViewController {
         let header = MJRefreshNormalHeader(refreshingTarget: self, refreshingAction: #selector(self.loadNew))
         tableView.mj_header = header
         tableView.mj_header.beginRefreshing()
-
     }
 
     func loadNew() {
@@ -77,6 +79,7 @@ class HomeViewController: UIViewController {
 extension HomeViewController : UITableViewDataSource,UITableViewDelegate{
     
     func numberOfSections(in tableView: UITableView) -> Int {
+        noDataView.isHidden = !(dataArray?.count == 0)
         return dataArray?.count ?? 0;
     }
     
@@ -126,6 +129,28 @@ extension HomeViewController : UITableViewDataSource,UITableViewDelegate{
     
 }
 
+extension HomeViewController {
+    //播放启动画面动画
+    func launchAnimation() {
+        //获取启动视图
+        let vc = UIStoryboard(name: "LaunchScreen", bundle: nil)
+            .instantiateViewController(withIdentifier: "launch")
+        let launchview = vc.view!
+        let delegate = UIApplication.shared.delegate
+        delegate?.window!!.addSubview(launchview)
+        //self.view.addSubview(launchview) //如果没有导航栏，直接添加到当前的view即可
+
+        //播放动画效果，完毕后将其移除
+        UIView.animate(withDuration: 1, delay: 1.2, options: .curveLinear,
+                       animations: {
+                        launchview.alpha = 0.0
+                        let transform = CATransform3DScale(CATransform3DIdentity, 1.5, 1.5, 1.0)
+                        launchview.layer.transform = transform
+        }) { (finished) in
+            launchview.removeFromSuperview()
+        }
+    }
+}
 
 
 

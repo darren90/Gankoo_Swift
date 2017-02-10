@@ -8,28 +8,37 @@
 
 import UIKit
 
-class MeViewController: UIViewController {
+class MeViewController: BaseViewController {
 
     lazy var tableView:UITableView = UITableView(frame: self.view.bounds, style: .plain)
 
-    var page:Int = 1
-    var dataArray:[DataModel] = [DataModel]()
+    var dataArray:[DataModel] = [DataModel](){
+        didSet{
+            tableView.reloadData()
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        automaticallyAdjustsScrollViewInsets = false
 
         initTableView()
 
         //最底部的空间，设置距离底部的间距（autolayout），然后再设置这两个属性，就可以自动计算高度
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 100
-
+        tableView.separatorStyle = .none
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        dataArray = RMDBTools.shareInstance.getAllDatas()
+    }
 
     func initTableView(){
         view.addSubview(tableView)
-        tableView.frame = CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.height - 49)
+        tableView.frame = CGRect(x: 0, y: 64, width: view.frame.size.width, height: view.frame.height - 64 - 49)
         tableView.delegate = self
         tableView.dataSource = self
         tableView.backgroundColor = UIColor.white
@@ -37,7 +46,7 @@ class MeViewController: UIViewController {
         let header = MJRefreshNormalHeader(refreshingTarget: self, refreshingAction: #selector(self.loadNew))
         tableView.mj_header = header
         tableView.mj_header.beginRefreshing()
-        tableView.mj_footer = MJRefreshAutoFooter(refreshingTarget: self, refreshingAction: #selector(self.loadMore))
+//        tableView.mj_footer = MJRefreshAutoFooter(refreshingTarget: self, refreshingAction: #selector(self.loadMore))
 
 //        tableView.isEditing
         //多行编辑
@@ -46,36 +55,14 @@ class MeViewController: UIViewController {
 
 
     func loadNew() {
-        page = 1
+        endReresh()
 
-        loadDatas(isNewData: true)
-    }
-
-    func loadMore(){
-        page = page + 1
-
-        loadDatas(isNewData: false)
-    }
-
-    func loadDatas(isNewData:Bool){
-        GankooApi.shareInstance.getSortDatas(sortName:"全部", page: page) { (result :[DataModel]?, error : NSError?) in
-            self.endReresh()
-            if(error == nil){
-                if isNewData {
-                    self.dataArray = result!
-                }else{
-                    self.dataArray = self.dataArray + result!
-                }
-                self.tableView.reloadData()
-            }else{
-
-            }
-        }
+        dataArray = RMDBTools.shareInstance.getAllDatas()
     }
 
     func endReresh(){
         self.tableView.mj_header.endRefreshing()
-        self.tableView.mj_footer.endRefreshing()
+//        self.tableView.mj_footer.endRefreshing()
     }
 }
 
@@ -86,7 +73,7 @@ extension MeViewController : UITableViewDataSource,UITableViewDelegate{
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //        let array = dataArray?[section].dataArray
+        noDataView.isHidden = !(dataArray.count == 0)
         return dataArray.count
     }
 
@@ -119,8 +106,12 @@ extension MeViewController : UITableViewDataSource,UITableViewDelegate{
 
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         let deleAction = UITableViewRowAction(style: .destructive, title: "取消收藏", handler: { (action, indexPath) in
+            let model = self.dataArray[indexPath.row]
+            RMDBTools.shareInstance.deleData(model)
             self.dataArray.remove(at: indexPath.row)
-            tableView.deleteRows(at: [indexPath], with: .left)
+//            tableView.deleteRows(at: [indexPath], with: .left)
+
+//            self.noDataView.isHidden = !(self.dataArray.count == 0)
         })
         return [deleAction]
     }
