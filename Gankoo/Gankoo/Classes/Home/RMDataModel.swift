@@ -112,6 +112,7 @@ class RMDBTools: NSObject {
         m.iconUrl = model.images?.first ?? ""
         m.who = model.who ?? "未知"
         m.date = Date()
+        m.url = model.url ?? "https://github.com/darren90"
         return m
     }
 

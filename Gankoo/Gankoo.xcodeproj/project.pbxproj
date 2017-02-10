@@ -88,6 +88,8 @@
 		89F0911C1E4C79EA002D618C /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 89F091121E4C798B002D618C /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		89F0911F1E4C7A70002D618C /* RMDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F0911E1E4C7A70002D618C /* RMDataModel.swift */; };
 		89F091211E4D8B27002D618C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F091201E4D8B27002D618C /* BaseViewController.swift */; };
+		89F091231E4DA34A002D618C /* CoreSpotlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89F091221E4DA34A002D618C /* CoreSpotlight.framework */; };
+		89F091251E4DA38D002D618C /* SpotlightTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F091241E4DA38D002D618C /* SpotlightTool.swift */; };
 		954169D65AD0CE34D47FD50D /* Pods_Gankoo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3262F691B21EEA4AA2325EF /* Pods_Gankoo.framework */; };
 		FE319E111E49FE3200662908 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE319E101E49FE3200662908 /* DataModel.swift */; };
 		FE319E131E49FEB700662908 /* GankooApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE319E121E49FEB700662908 /* GankooApi.swift */; };
@@ -245,6 +247,8 @@
 		89F091151E4C79BE002D618C /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		89F0911E1E4C7A70002D618C /* RMDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RMDataModel.swift; sourceTree = "<group>"; };
 		89F091201E4D8B27002D618C /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		89F091221E4DA34A002D618C /* CoreSpotlight.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreSpotlight.framework; path = System/Library/Frameworks/CoreSpotlight.framework; sourceTree = SDKROOT; };
+		89F091241E4DA38D002D618C /* SpotlightTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotlightTool.swift; sourceTree = "<group>"; };
 		B3262F691B21EEA4AA2325EF /* Pods_Gankoo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gankoo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77EE55DDF2226C13757D4AE /* Pods-Gankoo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gankoo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gankoo/Pods-Gankoo.release.xcconfig"; sourceTree = "<group>"; };
 		F12E19576C175EF4AD47F35C /* Pods-Gankoo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gankoo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gankoo/Pods-Gankoo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -260,6 +264,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89F091231E4DA34A002D618C /* CoreSpotlight.framework in Frameworks */,
 				954169D65AD0CE34D47FD50D /* Pods_Gankoo.framework in Frameworks */,
 				89F091141E4C798B002D618C /* RealmSwift.framework in Frameworks */,
 				89F091191E4C79EA002D618C /* Realm.framework in Frameworks */,
@@ -365,6 +370,7 @@
 				FE319E141E4A025800662908 /* DataListModel.swift */,
 				FE319E121E49FEB700662908 /* GankooApi.swift */,
 				89F0911E1E4C7A70002D618C /* RMDataModel.swift */,
+				89F091241E4DA38D002D618C /* SpotlightTool.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -702,6 +708,7 @@
 		D1F9C3AA3CA65CB5DAA03F76 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				89F091221E4DA34A002D618C /* CoreSpotlight.framework */,
 				89F091151E4C79BE002D618C /* libc++.tbd */,
 				B3262F691B21EEA4AA2325EF /* Pods_Gankoo.framework */,
 			);
@@ -929,6 +936,7 @@
 				89A1F1F81E49B58A005E62A9 /* MJRefreshConst.m in Sources */,
 				89A1F1FA1E49B58A005E62A9 /* UIScrollView+MJExtension.m in Sources */,
 				89A1F1E31E49B58A005E62A9 /* DateCollectionViewCell.swift in Sources */,
+				89F091251E4DA38D002D618C /* SpotlightTool.swift in Sources */,
 				89A1F1DF1E49B58A005E62A9 /* APINetTools.swift in Sources */,
 				89A1F25F1E4AF1FF005E62A9 /* DLCustomSlideView.m in Sources */,
 				89A1F2041E49B58A005E62A9 /* WhisperView.swift in Sources */,

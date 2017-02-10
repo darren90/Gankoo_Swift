@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreSpotlight
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -59,6 +60,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+
+
+    //通过Spotlight进入APP
+    func application(_ application: UIApplication, willContinueUserActivityWithType userActivityType: String) -> Bool {
+
+        if userActivity?.activityType == CSSearchableItemActionType {
+//            let idetifier = (userActivity?.userInfo?[CSSearchableItemActivityIdentifier] as? String) !
+            guard let idfier = userActivity?.userInfo?[CSSearchableItemActivityIdentifier] as? String else {
+                return false
+            }
+
+            if idfier == "gankoo" {
+                print(userActivity?.userInfo ?? "")
+            }
+        }
+
+        return true
+    }
+
 
     func initThirdSevices(){
         initBugly()

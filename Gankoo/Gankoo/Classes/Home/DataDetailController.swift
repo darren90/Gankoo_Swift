@@ -13,8 +13,6 @@ class DataDetailController: SFSafariViewController {
 
     lazy var btn = UIButton(type: .custom)
 
-    var listId:String?
-
     var model:DataModel?
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,8 +44,15 @@ class DataDetailController: SFSafariViewController {
 
 
     func collectionAction(_ btn:UIButton){
-
+        //插入数据库
         RMDBTools.shareInstance.addData(model)
+
+        //添加到Spotlight
+        SpotlightTool.shareInstance.addCSAll()
+
+//        //添加到Spotlight
+        let keyword = [model?.who ?? "",model?.type ?? ""]
+        SpotlightTool.shareInstance.addCSImgItem(title: model?.desc ?? "Gankoo", imageUrl: model?.images?.first, keyword: keyword)
 
           UIView.animate(withDuration: 0.25, animations: {
             btn.transform = CGAffineTransform(scaleX: 1.3, y: 1.3);//放大
