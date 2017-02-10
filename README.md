@@ -6,11 +6,13 @@ API from [gank.io: https://gank.io/api.](https://gank.io/api)
 业余的iOS项目，使用Swift编写
  
 
-## Details
+## Feature
 
 - 纯 Swift 项目  
 
 - 数据存储使用的是Realm
+
+- 支持CoreSpotlight
 
 App 还待完善，欢迎提交各种 PR。
 

@@ -50,9 +50,9 @@ class DataDetailController: SFSafariViewController {
         //添加到Spotlight
         SpotlightTool.shareInstance.addCSAll()
 
-//        //添加到Spotlight
-        let keyword = [model?.who ?? "",model?.type ?? ""]
-        SpotlightTool.shareInstance.addCSImgItem(title: model?.desc ?? "Gankoo", imageUrl: model?.images?.first, keyword: keyword)
+////        //添加到Spotlight
+//        let keyword = [model?.who ?? "",model?.type ?? ""]
+//        SpotlightTool.shareInstance.addCSImgItem(title: model?.desc ?? "Gankoo", imageUrl: model?.images?.first, keyword: keyword)
 
           UIView.animate(withDuration: 0.25, animations: {
             btn.transform = CGAffineTransform(scaleX: 1.3, y: 1.3);//放大

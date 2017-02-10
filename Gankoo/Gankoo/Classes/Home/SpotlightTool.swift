@@ -43,8 +43,8 @@ class SpotlightTool: NSObject {
     }
 
     func addCSAll(){
-        deleAllCS()
-        
+//        deleAllCS()
+
         //获取所有可用的数据
         let allModels = RMDBTools.shareInstance.getAllDatas()
 
@@ -59,7 +59,7 @@ class SpotlightTool: NSObject {
             let keywords = [model.who ?? "",model.type ?? ""]
             attr.title = model.desc
             attr.keywords = keywords
-
+            attr.contentDescription = model.desc
             let imageUrl = model.images?.first
             if imageUrl != nil {
                 let cache = YYWebImageManager.shared().cache
@@ -70,11 +70,14 @@ class SpotlightTool: NSObject {
                 }
             }
 
-            let sm = CSSearchableItem(uniqueIdentifier: "gankoo", domainIdentifier: "open-file+\(model._id)", attributeSet: attr)
-
+            //注：uniqueIdentifier domainIdentifier 每一个条目都不能相同
+            let sm = CSSearchableItem(uniqueIdentifier: "unique+\(model._id)", domainIdentifier: "domain+\(model._id)", attributeSet: attr)
+            sm.expirationDate = Date(timeIntervalSinceNow: 60 * 60 * 24 * 30 * 12 * 10)
             items.append(sm)
         }
 
+
+//        CSSearchableIndex.default().beginBatch()
         CSSearchableIndex.default().indexSearchableItems(items, completionHandler: { error in
             if error != nil{
                 print("创建Spotlight索引失败:\(error?.localizedDescription)")
@@ -95,3 +98,7 @@ class SpotlightTool: NSObject {
     }
 
 }
+
+
+
+
