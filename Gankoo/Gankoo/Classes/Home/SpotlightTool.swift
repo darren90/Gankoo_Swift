@@ -24,13 +24,18 @@ class SpotlightTool: NSObject {
         attr.keywords = keyword
 //        attr.contentDescription = "描述信息"
 
+        let defalutImgae = UIImage(named:"gankoo01")
         if imageUrl != nil {
             let cache = YYWebImageManager.shared().cache
             let image = cache?.getImageForKey(imageUrl!)
 
             if image != nil {
                 attr.thumbnailData = UIImagePNGRepresentation(image!)
+            }else{
+                attr.thumbnailData = UIImagePNGRepresentation(defalutImgae!)
             }
+        }else{
+            attr.thumbnailData = UIImagePNGRepresentation(defalutImgae!)
         }
 
         let sm = CSSearchableItem(uniqueIdentifier: "gankoo", domainIdentifier: "open-file-2", attributeSet: attr)
