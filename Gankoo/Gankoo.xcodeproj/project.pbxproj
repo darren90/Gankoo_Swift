@@ -46,21 +46,11 @@
 		89A1F1F41E49B58A005E62A9 /* MJRefreshGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F1B91E49B58A005E62A9 /* MJRefreshGifHeader.m */; };
 		89A1F1F51E49B58A005E62A9 /* MJRefreshNormalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F1BB1E49B58A005E62A9 /* MJRefreshNormalHeader.m */; };
 		89A1F1F61E49B58A005E62A9 /* MJRefreshStateHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F1BD1E49B58A005E62A9 /* MJRefreshStateHeader.m */; };
-		89A1F1F71E49B58A005E62A9 /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 89A1F1BE1E49B58A005E62A9 /* MJRefresh.bundle */; };
 		89A1F1F81E49B58A005E62A9 /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F1C11E49B58A005E62A9 /* MJRefreshConst.m */; };
 		89A1F1F91E49B58A005E62A9 /* NSBundle+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F1C31E49B58A005E62A9 /* NSBundle+MJRefresh.m */; };
 		89A1F1FA1E49B58A005E62A9 /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F1C51E49B58A005E62A9 /* UIScrollView+MJExtension.m */; };
 		89A1F1FB1E49B58A005E62A9 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F1C71E49B58A005E62A9 /* UIScrollView+MJRefresh.m */; };
 		89A1F1FC1E49B58A005E62A9 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F1C91E49B58A005E62A9 /* UIView+MJExtension.m */; };
-		89A1F1FD1E49B58A005E62A9 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F1CB1E49B58A005E62A9 /* Config.swift */; };
-		89A1F1FE1E49B58A005E62A9 /* ColorList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F1CD1E49B58A005E62A9 /* ColorList.swift */; };
-		89A1F1FF1E49B58A005E62A9 /* FontList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F1CE1E49B58A005E62A9 /* FontList.swift */; };
-		89A1F2001E49B58A005E62A9 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F1CF1E49B58A005E62A9 /* Message.swift */; };
-		89A1F2011E49B58A005E62A9 /* ShoutFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F1D01E49B58A005E62A9 /* ShoutFactory.swift */; };
-		89A1F2021E49B58A005E62A9 /* Showing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F1D11E49B58A005E62A9 /* Showing.swift */; };
-		89A1F2031E49B58A005E62A9 /* WhisperFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F1D21E49B58A005E62A9 /* WhisperFactory.swift */; };
-		89A1F2041E49B58A005E62A9 /* WhisperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F1D31E49B58A005E62A9 /* WhisperView.swift */; };
-		89A1F2051E49B58A005E62A9 /* WhistleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F1D41E49B58A005E62A9 /* WhistleFactory.swift */; };
 		89A1F2071E49B690005E62A9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F2061E49B690005E62A9 /* HomeViewController.swift */; };
 		89A1F2091E49B69C005E62A9 /* SortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F2081E49B69C005E62A9 /* SortViewController.swift */; };
 		89A1F20B1E49B6A3005E62A9 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F20A1E49B6A3005E62A9 /* MeViewController.swift */; };
@@ -204,15 +194,6 @@
 		89A1F1C71E49B58A005E62A9 /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
 		89A1F1C81E49B58A005E62A9 /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
 		89A1F1C91E49B58A005E62A9 /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
-		89A1F1CB1E49B58A005E62A9 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
-		89A1F1CD1E49B58A005E62A9 /* ColorList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorList.swift; sourceTree = "<group>"; };
-		89A1F1CE1E49B58A005E62A9 /* FontList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontList.swift; sourceTree = "<group>"; };
-		89A1F1CF1E49B58A005E62A9 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		89A1F1D01E49B58A005E62A9 /* ShoutFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoutFactory.swift; sourceTree = "<group>"; };
-		89A1F1D11E49B58A005E62A9 /* Showing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Showing.swift; sourceTree = "<group>"; };
-		89A1F1D21E49B58A005E62A9 /* WhisperFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhisperFactory.swift; sourceTree = "<group>"; };
-		89A1F1D31E49B58A005E62A9 /* WhisperView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhisperView.swift; sourceTree = "<group>"; };
-		89A1F1D41E49B58A005E62A9 /* WhistleFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhistleFactory.swift; sourceTree = "<group>"; };
 		89A1F2061E49B690005E62A9 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		89A1F2081E49B69C005E62A9 /* SortViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortViewController.swift; sourceTree = "<group>"; };
 		89A1F20A1E49B6A3005E62A9 /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
@@ -484,7 +465,6 @@
 				89A1F1911E49B58A005E62A9 /* DatePicker */,
 				89A1F1951E49B58A005E62A9 /* DWebView */,
 				89A1F19A1E49B58A005E62A9 /* ThirdPart */,
-				89A1F1CA1E49B58A005E62A9 /* Whisper */,
 			);
 			path = Vendor;
 			sourceTree = "<group>";
@@ -611,30 +591,6 @@
 				89A1F1BD1E49B58A005E62A9 /* MJRefreshStateHeader.m */,
 			);
 			path = Header;
-			sourceTree = "<group>";
-		};
-		89A1F1CA1E49B58A005E62A9 /* Whisper */ = {
-			isa = PBXGroup;
-			children = (
-				89A1F1CB1E49B58A005E62A9 /* Config.swift */,
-				89A1F1CC1E49B58A005E62A9 /* Configuration */,
-				89A1F1CF1E49B58A005E62A9 /* Message.swift */,
-				89A1F1D01E49B58A005E62A9 /* ShoutFactory.swift */,
-				89A1F1D11E49B58A005E62A9 /* Showing.swift */,
-				89A1F1D21E49B58A005E62A9 /* WhisperFactory.swift */,
-				89A1F1D31E49B58A005E62A9 /* WhisperView.swift */,
-				89A1F1D41E49B58A005E62A9 /* WhistleFactory.swift */,
-			);
-			path = Whisper;
-			sourceTree = "<group>";
-		};
-		89A1F1CC1E49B58A005E62A9 /* Configuration */ = {
-			isa = PBXGroup;
-			children = (
-				89A1F1CD1E49B58A005E62A9 /* ColorList.swift */,
-				89A1F1CE1E49B58A005E62A9 /* FontList.swift */,
-			);
-			path = Configuration;
 			sourceTree = "<group>";
 		};
 		89A1F20C1E49C0B8005E62A9 /* TFCycleScrollView */ = {
@@ -848,7 +804,6 @@
 				89A1F1401E49AC79005E62A9 /* Main.storyboard in Resources */,
 				89A1F1E11E49B58A005E62A9 /* iTVShows.css in Resources */,
 				89A1F2181E4AB380005E62A9 /* DataListCell.xib in Resources */,
-				89A1F1F71E49B58A005E62A9 /* MJRefresh.bundle in Resources */,
 				89A1F1DB1E49B58A005E62A9 /* ErrorView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -929,9 +884,7 @@
 				89A1F1EC1E49B58A005E62A9 /* MJRefreshFooter.m in Sources */,
 				89A1F2621E4AF1FF005E62A9 /* DLScrollTabbarView.m in Sources */,
 				89A1F1D81E49B58A005E62A9 /* BaseTableViewController.swift in Sources */,
-				89A1F2031E49B58A005E62A9 /* WhisperFactory.swift in Sources */,
 				89A1F1F31E49B58A005E62A9 /* MJRefreshBackStateFooter.m in Sources */,
-				89A1F2051E49B58A005E62A9 /* WhistleFactory.swift in Sources */,
 				89A1F1D61E49B58A005E62A9 /* BaseNavigationController.swift in Sources */,
 				89A1F1F81E49B58A005E62A9 /* MJRefreshConst.m in Sources */,
 				89A1F1FA1E49B58A005E62A9 /* UIScrollView+MJExtension.m in Sources */,
@@ -939,19 +892,15 @@
 				89F091251E4DA38D002D618C /* SpotlightTool.swift in Sources */,
 				89A1F1DF1E49B58A005E62A9 /* APINetTools.swift in Sources */,
 				89A1F25F1E4AF1FF005E62A9 /* DLCustomSlideView.m in Sources */,
-				89A1F2041E49B58A005E62A9 /* WhisperView.swift in Sources */,
-				89A1F1FF1E49B58A005E62A9 /* FontList.swift in Sources */,
 				89A1F1EE1E49B58A005E62A9 /* MJRefreshAutoGifFooter.m in Sources */,
 				89F091211E4D8B27002D618C /* BaseViewController.swift in Sources */,
 				89A1F1F01E49B58A005E62A9 /* MJRefreshAutoStateFooter.m in Sources */,
 				89A1F13D1E49AC79005E62A9 /* ViewController.swift in Sources */,
 				89A1F2071E49B690005E62A9 /* HomeViewController.swift in Sources */,
-				89A1F2011E49B58A005E62A9 /* ShoutFactory.swift in Sources */,
 				89A1F1D71E49B58A005E62A9 /* BaseTabBarController.swift in Sources */,
 				89A1F2601E4AF1FF005E62A9 /* DLSlideView.m in Sources */,
 				89A1F1FC1E49B58A005E62A9 /* UIView+MJExtension.m in Sources */,
 				89A1F1E91E49B58A005E62A9 /* MJRefreshAutoFooter.m in Sources */,
-				89A1F2001E49B58A005E62A9 /* Message.swift in Sources */,
 				89A1F1DD1E49B58A005E62A9 /* String-Extension.swift in Sources */,
 				FE319E151E4A025800662908 /* DataListModel.swift in Sources */,
 				89A1F2641E4AF1FF005E62A9 /* DLUtility.m in Sources */,
@@ -961,14 +910,11 @@
 				FE71F12D1E4B836100CAF907 /* DataSectionHeaderView.swift in Sources */,
 				89A1F1ED1E49B58A005E62A9 /* MJRefreshHeader.m in Sources */,
 				89A1F20B1E49B6A3005E62A9 /* MeViewController.swift in Sources */,
-				89A1F2021E49B58A005E62A9 /* Showing.swift in Sources */,
 				89A1F20E1E49C0D9005E62A9 /* TFCycleScrollModel.swift in Sources */,
 				89A1F2681E4B2007005E62A9 /* DataDetailController.swift in Sources */,
 				89F0911F1E4C7A70002D618C /* RMDataModel.swift in Sources */,
-				89A1F1FE1E49B58A005E62A9 /* ColorList.swift in Sources */,
 				89A1F13B1E49AC79005E62A9 /* AppDelegate.swift in Sources */,
 				89A1F1F41E49B58A005E62A9 /* MJRefreshGifHeader.m in Sources */,
-				89A1F1FD1E49B58A005E62A9 /* Config.swift in Sources */,
 				89A1F2661E4AF646005E62A9 /* SortDataViewController.swift in Sources */,
 				FE319E131E49FEB700662908 /* GankooApi.swift in Sources */,
 				89A1F2631E4AF1FF005E62A9 /* DLTabedSlideView.m in Sources */,
@@ -1084,7 +1030,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1128,7 +1074,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -1141,9 +1087,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F12E19576C175EF4AD47F35C /* Pods-Gankoo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 68539G8D3N;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Gankoo/Lib/Vendor/RealmSwift",
@@ -1151,7 +1099,7 @@
 				INFOPLIST_FILE = Gankoo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ftf.Gankoo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ftf.PrettyGirls;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Gankoo/Gankoo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1163,9 +1111,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B77EE55DDF2226C13757D4AE /* Pods-Gankoo.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 68539G8D3N;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Gankoo/Lib/Vendor/RealmSwift",
@@ -1173,7 +1123,7 @@
 				INFOPLIST_FILE = Gankoo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ftf.Gankoo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ftf.PrettyGirls;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Gankoo/Gankoo-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
