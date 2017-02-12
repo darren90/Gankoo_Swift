@@ -57,7 +57,6 @@
 		89A1F20E1E49C0D9005E62A9 /* TFCycleScrollModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F20D1E49C0D9005E62A9 /* TFCycleScrollModel.swift */; };
 		89A1F2101E49C0FD005E62A9 /* TFCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F20F1E49C0FD005E62A9 /* TFCycleScrollView.swift */; };
 		89A1F2131E49C121005E62A9 /* TFCycleScrollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F2111E49C121005E62A9 /* TFCycleScrollCell.swift */; };
-		89A1F2141E49C121005E62A9 /* TFCycleScrollCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89A1F2121E49C121005E62A9 /* TFCycleScrollCell.xib */; };
 		89A1F2171E4AB380005E62A9 /* DataListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F2151E4AB380005E62A9 /* DataListCell.swift */; };
 		89A1F2181E4AB380005E62A9 /* DataListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89A1F2161E4AB380005E62A9 /* DataListCell.xib */; };
 		89A1F21C1E4AC83E005E62A9 /* PinterestSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A1F21B1E4AC83E005E62A9 /* PinterestSegment.swift */; };
@@ -198,7 +197,6 @@
 		89A1F20D1E49C0D9005E62A9 /* TFCycleScrollModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFCycleScrollModel.swift; sourceTree = "<group>"; };
 		89A1F20F1E49C0FD005E62A9 /* TFCycleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFCycleScrollView.swift; sourceTree = "<group>"; };
 		89A1F2111E49C121005E62A9 /* TFCycleScrollCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFCycleScrollCell.swift; sourceTree = "<group>"; };
-		89A1F2121E49C121005E62A9 /* TFCycleScrollCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFCycleScrollCell.xib; sourceTree = "<group>"; };
 		89A1F2151E4AB380005E62A9 /* DataListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataListCell.swift; sourceTree = "<group>"; };
 		89A1F2161E4AB380005E62A9 /* DataListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DataListCell.xib; sourceTree = "<group>"; };
 		89A1F21A1E4AC83E005E62A9 /* PinterestSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinterestSegment.h; sourceTree = "<group>"; };
@@ -597,7 +595,6 @@
 				89A1F20D1E49C0D9005E62A9 /* TFCycleScrollModel.swift */,
 				89A1F20F1E49C0FD005E62A9 /* TFCycleScrollView.swift */,
 				89A1F2111E49C121005E62A9 /* TFCycleScrollCell.swift */,
-				89A1F2121E49C121005E62A9 /* TFCycleScrollCell.xib */,
 			);
 			path = TFCycleScrollView;
 			sourceTree = "<group>";
@@ -797,7 +794,6 @@
 				89A1F1421E49AC79005E62A9 /* Assets.xcassets in Resources */,
 				89A1F1E61E49B58A005E62A9 /* sure_placeholder_error@2x.png in Resources */,
 				FE71F12F1E4B836B00CAF907 /* DataSectionHeaderView.xib in Resources */,
-				89A1F2141E49C121005E62A9 /* TFCycleScrollCell.xib in Resources */,
 				89A1F1401E49AC79005E62A9 /* Main.storyboard in Resources */,
 				89A1F1E11E49B58A005E62A9 /* iTVShows.css in Resources */,
 				89A1F2181E4AB380005E62A9 /* DataListCell.xib in Resources */,
