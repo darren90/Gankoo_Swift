@@ -125,7 +125,6 @@ extension HomeViewController : UITableViewDataSource,UITableViewDelegate{
 
         tableView.deselectRow(at: indexPath, animated: true)
     }
-    
 }
 
 extension HomeViewController {

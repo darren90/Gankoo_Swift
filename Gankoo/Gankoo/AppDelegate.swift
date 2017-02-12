@@ -9,6 +9,9 @@
 import UIKit
 import CoreSpotlight
 
+//#define KAppid                  @"1061374229"
+
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -96,8 +99,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         config.reportLogLevel = BuglyLogLevel.warn
 
         config.channel = "Bugly"
-
-        Bugly.start(withAppId: "900001055", config: config)
+        //BUgly Secrite = "ifzTIjm8FXUNSgsg"
+        Bugly.start(withAppId: "900012079", config: config)
 
         Bugly.setTag(1799);
 
@@ -109,6 +112,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     //MARK: -- 友盟统计
     func initUmengTrack(){
         MobClick.setLogEnabled(false)
+//        #define KUmegnAppKey    @"5648bb2fe0f55a6ab8004696"
         let config = UMAnalyticsConfig.sharedInstance()
         config?.appKey = "5648bb2fe0f55a6ab8004696"
         config?.secret = ""
@@ -119,7 +123,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func initUMsocial() {
         let umMangerr = UMSocialManager.default()
         umMangerr!.openLog(false)
-        umMangerr!.umSocialAppkey = ""
+        umMangerr!.umSocialAppkey = "5648bb2fe0f55a6ab8004696"
 
         //微信
         umMangerr!.setPlaform(.wechatSession, appKey: "wxdc1e388c3822c80b", appSecret: "3baf1193c85774b3fd9d18447d76cab0", redirectURL: "http://mobile.umeng.com/social")
