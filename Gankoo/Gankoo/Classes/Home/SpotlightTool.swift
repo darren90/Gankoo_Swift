@@ -65,6 +65,8 @@ class SpotlightTool: NSObject {
             attr.title = model.desc
             attr.keywords = keywords
             attr.contentDescription = model.desc
+
+            let defalutImgae = UIImage(named:"gankoo01")
             let imageUrl = model.images?.first
             if imageUrl != nil {
                 let cache = YYWebImageManager.shared().cache
@@ -72,7 +74,11 @@ class SpotlightTool: NSObject {
 
                 if image != nil {
                     attr.thumbnailData = UIImagePNGRepresentation(image!)
+                }else{
+                    attr.thumbnailData = UIImagePNGRepresentation(defalutImgae!)
                 }
+            }else{
+                attr.thumbnailData = UIImagePNGRepresentation(defalutImgae!)
             }
 
             //注：uniqueIdentifier domainIdentifier 每一个条目都不能相同
