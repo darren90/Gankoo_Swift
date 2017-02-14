@@ -3,7 +3,7 @@
 
 API from [gank.io: https://gank.io/api.](https://gank.io/api)
 
-业余的iOS项目，使用Swift编写
+业余的iOS项目，使用Swift3编写
  
 
 ## Feature
@@ -15,6 +15,11 @@ API from [gank.io: https://gank.io/api.](https://gank.io/api)
 - 支持CoreSpotlight
 
 App 还待完善，欢迎提交各种 PR。
+
+## TODO 
+- 检索
+- 分享
+- 设置
 
 ## Requirements
 
