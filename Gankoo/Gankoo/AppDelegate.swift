@@ -134,9 +134,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //新浪
         umMangerr!.setPlaform(.sina, appKey: "2949226810", appSecret: "ad08040031457a934608f9118a8577e4", redirectURL: "http://mobile.umeng.com/social")
     }
-
-
-
 }
 
 extension AppDelegate {
