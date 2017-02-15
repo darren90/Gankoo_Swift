@@ -88,7 +88,7 @@ extension SortViewController : DLCustomSlideViewDelegate{
 
     func dlCustomSlideView(_ sender: DLCustomSlideView!, didSelectedAt index: Int) {
         let name = sorts[index]
-        title = name
+        navigationItem.title = name
     }
 }
 

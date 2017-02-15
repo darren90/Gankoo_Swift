@@ -175,6 +175,7 @@
 		FE319E141E4A025800662908 /* DataListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataListModel.swift; sourceTree = "<group>"; };
 		FE71F12C1E4B836100CAF907 /* DataSectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSectionHeaderView.swift; sourceTree = "<group>"; };
 		FE71F12E1E4B836B00CAF907 /* DataSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DataSectionHeaderView.xib; sourceTree = "<group>"; };
+		FEA41AB91E54B98400F1641F /* GankooScript.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = GankooScript.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +235,7 @@
 				89A1F13A1E49AC79005E62A9 /* AppDelegate.swift */,
 				89A1F13C1E49AC79005E62A9 /* ViewController.swift */,
 				89A1F1681E49AD46005E62A9 /* Gankoo-Bridging-Header.h */,
+				FEA41AB91E54B98400F1641F /* GankooScript.sh */,
 				89A1F13E1E49AC79005E62A9 /* Main.storyboard */,
 				89A1F1411E49AC79005E62A9 /* Assets.xcassets */,
 				89A1F1871E49B58A005E62A9 /* Lib */,
@@ -534,6 +536,7 @@
 				A6654E19773B9F3F45FF0F24 /* [CP] Embed Pods Frameworks */,
 				300EFFD9B7DBDDE986C1A5E0 /* [CP] Copy Pods Resources */,
 				89F0911D1E4C79EA002D618C /* Embed Frameworks */,
+				FEA41AB81E54B62E00F1641F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -706,6 +709,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gankoo/Pods-Gankoo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		FEA41AB81E54B62E00F1641F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
 		};
 /* End PBXShellScriptBuildPhase section */
 

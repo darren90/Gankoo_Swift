@@ -30,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        registHomeScreenQuickActions()
         
         //设置全局的tabbar的默认颜色 rgb(61, 168, 245)
         let holeColor = UIColor(colorLiteralRed: 61/255.0, green: 168/255.0, blue: 245/255.0, alpha: 1.0)
@@ -136,6 +136,46 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+
+}
+
+extension AppDelegate {
+    
+    //动态注册Home Screen Quick Actions
+    func registHomeScreenQuickActions(){
+        let item1 = UIApplicationShortcutItem(type: "com.ftf.like", localizedTitle: "收藏", localizedSubtitle: "subtitle", icon: UIApplicationShortcutIcon(type: .play), userInfo: ["love" : "收藏"]);
+        // UIApplicationShortcutItem 代表一个item
+        // type： 唯一标示符的属性
+        // localizedTitle: 显示的标题
+        // localizedSubtitle: 显示的二级标题
+        // icon：显示的图片，可以自定义，也可以使用系统提供的样式
+        // userInfo: 包含一些信息
+        
+        // 自定义的icon
+        //icon:UIApplicationShortcutIcon(templateImageName: "like")
+        UIApplication.shared.shortcutItems = [item1];
+    }
+    
+    func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
+        if let userInfo = shortcutItem.userInfo {
+            print("app entro userInfo : \(userInfo)")
+            
+            guard let key = userInfo.keys.first  else {
+                return
+            }
+            
+            guard let rootVc = self.window?.rootViewController as? UITabBarController else{
+                return
+            }
+            if key == "love" {
+                rootVc.selectedIndex = 2
+            }
+            
+            
+            print("key--\(key)")
+            
+        }
+    }
 
 }
 
