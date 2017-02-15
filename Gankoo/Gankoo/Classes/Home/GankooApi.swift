@@ -136,9 +136,11 @@ class GankooApi: NSObject {
         let formatter = DateFormatter()
         formatter.dateFormat = "YYYY/MM/dd"
         let dateStr = formatter.string(from: date)
+        
+        let defaultDateStr = "2017/02/08"
 
         guard let avalids = getHistoryDatas() else{
-            return dateStr
+            return defaultDateStr
         }
 
         if (avalids as NSArray).contains(dateStr) {

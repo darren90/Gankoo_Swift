@@ -21,7 +21,7 @@ class TFCycleScrollCell: UICollectionViewCell {
                 return
             }
             let url = URL(string: model.imgUrl ?? "")
-            iconView.sd_setImage(with: url, placeholderImage: UIImage(named: "nopic_780x420"))
+            iconView.yy_setImage(with: url, placeholder:  UIImage(named: "nopic_780x420"))
         }
     }
     

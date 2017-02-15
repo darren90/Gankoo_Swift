@@ -188,7 +188,7 @@ class BaseViewController2: UIViewController,UIGestureRecognizerDelegate {
     //MARK: -- 控制转屏
 
     func leftBtnClick() {
-        self.navigationController?.popViewController(animated: true)
+//        self.navigationController?.popViewController(animated: true)
         //        navigationController?.popViewController(animated: true)
         print("---leftBtnClick---")
     }
