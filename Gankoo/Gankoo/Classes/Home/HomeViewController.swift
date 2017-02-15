@@ -13,6 +13,7 @@ class HomeViewController: BaseViewController {
     @IBOutlet weak var tableView: UITableView!
 
     var getDate:Date = Date()
+    var refreshControl = UIRefreshControl()
 
     var dataArray:[DataListModel]? {
         didSet{
@@ -31,10 +32,16 @@ class HomeViewController: BaseViewController {
         //最底部的空间，设置距离底部的间距（autolayout），然后再设置这两个属性，就可以自动计算高度
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 100
-        let header = MJRefreshNormalHeader(refreshingTarget: self, refreshingAction: #selector(self.loadNew))
-        tableView.mj_header = header
-        tableView.mj_header.beginRefreshing()
+ 
+        
+        //添加刷新
+        refreshControl.addTarget(self, action: #selector(self.loadNew),
+                                 for: .valueChanged)
+        tableView.addSubview(refreshControl)
+        refreshControl.beginRefreshing()
+        loadNew()
     }
+    
 
     func loadNew() {
         GankooApi.shareInstance.getHomeData(date:getDate) { ( result : [DataListModel]?, error : NSError?) in
@@ -50,9 +57,7 @@ class HomeViewController: BaseViewController {
     }
 
     func endReresh(){
-        self.tableView.mj_header.endRefreshing()
-        self.tableView.mj_header.isHidden = true
-//        self.tableView.mj_footer.endRefreshing()
+        self.refreshControl.endRefreshing()
     }
 
     @IBAction func dateAction(_ sender: UIBarButtonItem) {

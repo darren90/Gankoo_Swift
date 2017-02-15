@@ -24,7 +24,7 @@ class APINetTools: NSObject {
 
 
     static func GET(urlStr:String,parms:[String : AnyObject]?,fininsh : @escaping (_ result:AnyObject? , _ error:NSError?) -> ()){
-
+        
         Alamofire.request(urlStr, method: .get).responseJSON { (response) in
             switch response.result.isSuccess {
             case true:

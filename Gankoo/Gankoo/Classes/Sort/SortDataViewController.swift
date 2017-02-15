@@ -13,10 +13,13 @@ class SortDataViewController: BaseViewController {
 
     lazy var tableView:UITableView = UITableView(frame: self.view.bounds, style: .plain)
 
-
     var sortName:String? 
     var page:Int = 1
     var dataArray:[DataModel] = [DataModel]()
+
+    //刷新控制器
+    var refreshControl = UIRefreshControl()
+    let activityViewIndicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.white)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,11 +39,28 @@ class SortDataViewController: BaseViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.backgroundColor = UIColor.white
-        let header = MJRefreshNormalHeader(refreshingTarget: self, refreshingAction: #selector(self.loadNew))
-        tableView.mj_header = header
-        tableView.mj_header.beginRefreshing()
-
-        tableView.mj_footer = MJRefreshAutoFooter(refreshingTarget: self, refreshingAction: #selector(self.loadMore))
+    
+        setupRefreshcontrol()
+    }
+    //上拉刷新
+    fileprivate func setupRefreshcontrol() {
+        //添加下拉刷新
+        refreshControl.addTarget(self, action: #selector(self.loadNew),
+                                 for: .valueChanged)
+        tableView.addSubview(refreshControl)
+        refreshControl.beginRefreshing()
+        loadNew()
+        
+        //添加下拉加载更多
+        let loadMoreView:UIView = UIView(frame: CGRect(x: 0, y: self.tableView.contentSize.height, width: self.tableView.bounds.size.width, height: 40))
+        loadMoreView.autoresizingMask = UIViewAutoresizing.flexibleWidth
+        loadMoreView.backgroundColor = UIColor.white
+        activityViewIndicator.color = UIColor.darkGray
+        activityViewIndicator.frame = CGRect(x: loadMoreView.frame.size.width/2-activityViewIndicator.frame.width/2, y: loadMoreView.frame.size.height/2-activityViewIndicator.frame.height/2, width: activityViewIndicator.frame.width, height: activityViewIndicator.frame.height)
+        //        activityViewIndicator.startAnimating()
+        loadMoreView.addSubview(activityViewIndicator)
+        
+        self.tableView.tableFooterView = loadMoreView
     }
 
 
@@ -51,6 +71,8 @@ class SortDataViewController: BaseViewController {
     }
 
     func loadMore(){
+        self.activityViewIndicator.startAnimating()
+        
         page = page + 1
 
         loadDatas(isNewData: false)
@@ -73,8 +95,8 @@ class SortDataViewController: BaseViewController {
     }
 
     func endReresh(){
-        self.tableView.mj_header.endRefreshing()
-        self.tableView.mj_footer.endRefreshing()
+        self.refreshControl.endRefreshing()
+        self.activityViewIndicator.stopAnimating()
     }
 }
 
@@ -108,6 +130,23 @@ extension SortDataViewController : UITableViewDataSource,UITableViewDelegate{
 
         tableView.deselectRow(at: indexPath, animated: true)
     }
+    
+    //判断上拉加载更多的触发时机
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        print("scrollView.contentOffset.y:\(scrollView.contentOffset.y)")
+        
+        if self.page == 1, scrollView.contentOffset.y <= 0 { return }
+        
+        let y1 = scrollView.contentOffset.y + scrollView.frame.height
+        let y2 = scrollView.contentSize.height
+        print("scrollViewDidEndDragging--y1:\(y1),y2:\(y2)")
+        if scrollView.contentOffset.y + scrollView.frame.height >= scrollView.contentSize.height {
+            print("begain refresh")
+            
+            self.loadMore()
+        }
+    }
+
     
 }
 

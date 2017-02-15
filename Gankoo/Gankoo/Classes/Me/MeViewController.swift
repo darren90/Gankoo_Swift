@@ -11,7 +11,7 @@ import UIKit
 class MeViewController: BaseViewController {
 
     lazy var tableView:UITableView = UITableView(frame: self.view.bounds, style: .plain)
-
+    var refreshControl = UIRefreshControl()
     var dataArray:[DataModel] = [DataModel](){
         didSet{
             tableView.reloadData()
@@ -28,6 +28,8 @@ class MeViewController: BaseViewController {
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 100
         tableView.separatorStyle = .none
+        
+
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -43,10 +45,12 @@ class MeViewController: BaseViewController {
         tableView.dataSource = self
         tableView.backgroundColor = UIColor.white
 
-        let header = MJRefreshNormalHeader(refreshingTarget: self, refreshingAction: #selector(self.loadNew))
-        tableView.mj_header = header
-        tableView.mj_header.beginRefreshing()
-//        tableView.mj_footer = MJRefreshAutoFooter(refreshingTarget: self, refreshingAction: #selector(self.loadMore))
+        refreshControl.addTarget(self, action: #selector(self.loadNew),
+                                 for: .valueChanged)
+        tableView.addSubview(refreshControl)
+        refreshControl.beginRefreshing()
+        loadNew()
+ 
 
 //        tableView.isEditing
         //多行编辑
@@ -61,8 +65,7 @@ class MeViewController: BaseViewController {
     }
 
     func endReresh(){
-        self.tableView.mj_header.endRefreshing()
-//        self.tableView.mj_footer.endRefreshing()
+        self.refreshControl.endRefreshing()
     }
 }
 
