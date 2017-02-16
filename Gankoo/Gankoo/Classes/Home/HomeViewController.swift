@@ -27,6 +27,7 @@ class HomeViewController: BaseViewController {
         launchAnimation() 
 
         automaticallyAdjustsScrollViewInsets = false
+        registerForPreviewing(with: self, sourceView: view)
 
         tableView.separatorStyle = .none
         //最底部的空间，设置距离底部的间距（autolayout），然后再设置这两个属性，就可以自动计算高度
@@ -153,6 +154,38 @@ extension HomeViewController {
             launchview.removeFromSuperview()
         }
     }
+}
+
+
+
+extension HomeViewController : UIViewControllerPreviewingDelegate{
+
+
+    func previewingContext(_ previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
+
+        guard let indexPath = tableView.indexPathForRow(at: location) , let cell = tableView.cellForRow(at: indexPath) else {
+            return nil
+        }
+
+        let listModel = dataArray?[indexPath.section]
+        let model = listModel?.dataArray?[indexPath.row]
+        guard let urlStr = model?.url else {
+            return nil
+        }
+        let url = URL(string: urlStr)
+        let detailVc = DataDetailController(url: url!, entersReaderIfAvailable: true)
+        detailVc.model = model
+
+        detailVc.preferredContentSize = CGSize(width: 0, height: 0)
+        previewingContext.sourceRect = cell.frame
+        return detailVc
+
+    }
+
+    func previewingContext(_ previewingContext: UIViewControllerPreviewing, commit viewControllerToCommit: UIViewController) {
+        show(viewControllerToCommit, sender: self)
+    }
+    
 }
 
 

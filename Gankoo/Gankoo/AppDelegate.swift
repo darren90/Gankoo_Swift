@@ -140,7 +140,7 @@ extension AppDelegate {
     
     //动态注册Home Screen Quick Actions
     func registHomeScreenQuickActions(){
-        let item1 = UIApplicationShortcutItem(type: "com.ftf.like", localizedTitle: "收藏", localizedSubtitle: "subtitle", icon: UIApplicationShortcutIcon(type: .play), userInfo: ["love" : "收藏"]);
+        let item3 = UIApplicationShortcutItem(type: "com.ftf.like", localizedTitle: "收藏", localizedSubtitle: "like", icon:  UIApplicationShortcutIcon(templateImageName: "tab_mine"), userInfo: ["love" : "收藏"]);
         // UIApplicationShortcutItem 代表一个item
         // type： 唯一标示符的属性
         // localizedTitle: 显示的标题
@@ -150,7 +150,11 @@ extension AppDelegate {
         
         // 自定义的icon
         //icon:UIApplicationShortcutIcon(templateImageName: "like")
-        UIApplication.shared.shortcutItems = [item1];
+
+
+
+        let item2 = UIApplicationShortcutItem(type: "com.ftf.sort", localizedTitle: "分类", localizedSubtitle: "sort", icon: UIApplicationShortcutIcon(templateImageName: "tabbar_gank"), userInfo: ["sort" : "分类"])
+        UIApplication.shared.shortcutItems = [item2,item3];
     }
     
     func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
@@ -166,7 +170,11 @@ extension AppDelegate {
             }
             if key == "love" {
                 rootVc.selectedIndex = 2
+            }else if key == "sort"{
+                rootVc.selectedIndex = 1
             }
+
+
             
             
             print("key--\(key)")

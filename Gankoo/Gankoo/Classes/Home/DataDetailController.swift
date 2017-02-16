@@ -11,6 +11,25 @@ import SafariServices
 
 class DataDetailController: SFSafariViewController {
 
+    override var previewActionItems: [UIPreviewActionItem] {
+
+        let a1 = UIPreviewAction(title: "在新标签中打开", style: .default, handler: { (action, vc) in
+            print(action.title)
+        })
+        let a2 = UIPreviewAction(title: "加入阅读列表", style: .selected, handler: { (action, vc) in
+            print(action.title)
+        })
+        let a31 = UIPreviewAction(title: "拷贝", style: .default, handler: { (action, vc) in
+            print(action.title)
+        })
+        let a32 = UIPreviewAction(title: "收藏", style: .default, handler: { (action, vc) in
+            print(action.title)
+        })
+        let a3 = UIPreviewActionGroup(title: "共享&更多...", style: .default, actions: [a31,a32])
+
+        return [a1,a2,a3]
+    }
+    
     lazy var btn = UIButton(type: .custom)
 
     var model:DataModel?
