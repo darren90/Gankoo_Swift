@@ -41,8 +41,10 @@ class GankooApi: NSObject {
                             let model = DataModel.init(dict: dict)
                             arrModels.append(model)
                         }
-                        let dataModel = DataListModel(name: key, dataArray: arrModels)
-                        datas.append(dataModel)
+                        if key != "Android"{
+                            let dataModel = DataListModel(name: key, dataArray: arrModels)
+                            datas.append(dataModel)
+                        }
                     }
                 }
                 //排个序，，，
