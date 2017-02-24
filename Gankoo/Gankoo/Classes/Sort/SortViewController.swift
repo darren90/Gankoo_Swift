@@ -11,7 +11,7 @@ import UIKit
 class SortViewController: UIViewController {
 
 //    @IBOutlet weak var tableView: UITableView!
-    let sorts = ["全部", "iOS", "Android", "App", "前端", "拓展资源", "瞎推荐", "休息视频","福利"]
+    let sorts = ["全部", "iOS",  "App", "前端", "拓展资源", "瞎推荐", "休息视频","福利"]//"Android",
 
     lazy var slideView:DLCustomSlideView = DLCustomSlideView(frame: self.view.bounds)
 
